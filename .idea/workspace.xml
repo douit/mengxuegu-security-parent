@@ -2,76 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ceafd93-07ae-48a3-a92d-af67994754b0" name="Default Changelist" comment="创建spring-security项目">
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/adminlte.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/adminlte.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/adminlte.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/adminlte.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.components.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.components.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.components.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.core.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.core.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.core.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.extra-components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.extra-components.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.extra-components.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.extra-components.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.pages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.pages.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.pages.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.pages.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.plugins.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.plugins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/css/alt/adminlte.plugins.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/AdminLTELogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/avatar04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/avatar3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/avatar5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/boxed-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/boxed-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/credit/american-express.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/credit/cirrus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/credit/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/credit/mestro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/credit/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/credit/paypal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/credit/visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/default-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/photo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/photo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/prod-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/prod-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/prod-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/prod-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/prod-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user1-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user2-160x160.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user3-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user4-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user5-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user6-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user7-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/img/user8-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/adminlte.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/adminlte.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/adminlte.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/adminlte.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/pages/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/pages/dashboard2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/dist/js/pages/dashboard3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/modules/img/index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/modules/img/logo.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/.npmignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css.map" afterDir="false" />
@@ -1787,22 +1717,7 @@
       <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/toastr/toastr.js.map" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/toastr/toastr.min.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/toastr/toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/error/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/control-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/script.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login-mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/system/user/user-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1820,7 +1735,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -1833,8 +1748,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" column="41" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="41" />
+            <state relative-caret-position="324">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1867,8 +1782,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
-    <option name="y" value="83" />
+    <option name="x" value="249" />
+    <option name="y" value="5" />
     <option name="width" value="1400" />
     <option name="height" value="998" />
   </component>
@@ -1878,8 +1793,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1904,6 +1819,41 @@
               <item name="mengxuegu-security-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1980,6 +1930,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575855337703</updated>
       <workItem from="1575855340852" duration="6284000" />
+      <workItem from="1575864492803" duration="469000" />
     </task>
     <task id="LOCAL-00001" summary="创建spring-security项目">
       <created>1575856403549</created>
@@ -1988,31 +1939,31 @@
       <option name="project" value="LOCAL" />
       <updated>1575856403549</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="创建spring-security项目">
+      <created>1575864926835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575864926835</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6284000" />
+    <option name="totallyTimeSpent" value="6753000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="83" width="1400" height="998" extended-state="0" />
+    <frame x="249" y="5" width="1400" height="998" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21119402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2141791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3236994" />
@@ -2020,17 +1971,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Word Book" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32947975" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2061,13 +2020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -2109,10 +2061,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="324">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
