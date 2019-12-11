@@ -314,15 +314,15 @@ jQuery.extend( {
 		}
 
 		// Support: IE<9
-		// Handle iteration over inherited properties before own properties.
+		// Handle iteration over inherited properites before own properites.
 		if ( !support.ownFirst ) {
 			for ( key in obj ) {
 				return hasOwn.call( obj, key );
 			}
 		}
 
-		// Own properties are enumerated firstly, so to speed up,
-		// if last one is own, then all properties are own.
+		// Own properites are enumerated firstly, so to speed up,
+		// if last one is own, then all properites are own.
 		for ( key in obj ) {}
 
 		return key === undefined || hasOwn.call( obj, key );
@@ -540,7 +540,7 @@ jQuery.extend( {
 	},
 
 	// jQuery.support is not used in Core but other projects attach their
-	// properties to it so it needs to exist.
+	// properites to it so it needs to exist.
 	support: support
 } );
 
@@ -913,7 +913,7 @@ function createCache() {
 	var keys = [];
 
 	function cache( key, value ) {
-		// Use (key + " ") to avoid collision with native prototype properties (see Issue #157)
+		// Use (key + " ") to avoid collision with native prototype properites (see Issue #157)
 		if ( keys.push( key + " " ) > Expr.cacheLength ) {
 			// Only keep the most recent entries
 			delete cache[ keys.shift() ];
@@ -1100,7 +1100,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	---------------------------------------------------------------------- */
 
 	// Support: IE<8
-	// Verify that getAttribute really returns attributes and not properties
+	// Verify that getAttribute really returns attributes and not properites
 	// (excepting IE8 booleans)
 	support.attributes = assert(function( div ) {
 		div.className = "i";
@@ -1484,7 +1484,7 @@ Sizzle.attr = function( elem, name ) {
 	}
 
 	var fn = Expr.attrHandle[ name.toLowerCase() ],
-		// Don't get fooled by Object.prototype properties (jQuery #13807)
+		// Don't get fooled by Object.prototype properites (jQuery #13807)
 		val = fn && hasOwn.call( Expr.attrHandle, name.toLowerCase() ) ?
 			fn( elem, name, !documentIsHTML ) :
 			undefined;
@@ -1964,7 +1964,7 @@ Expr = Sizzle.selectors = {
 			return elem === document.activeElement && (!document.hasFocus || document.hasFocus()) && !!(elem.type || elem.href || ~elem.tabIndex);
 		},
 
-		// Boolean properties
+		// Boolean properites
 		"enabled": function( elem ) {
 			return elem.disabled === false;
 		},
@@ -2446,7 +2446,7 @@ function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
 
 			// Add elements passing elementMatchers directly to results
 			// Support: IE<9, Safari
-			// Tolerate NodeList properties (IE: "length"; Safari: <number>) matching elements by id
+			// Tolerate NodeList properites (IE: "length"; Safari: <number>) matching elements by id
 			for ( ; i !== len && (elem = elems[i]) != null; i++ ) {
 				if ( byElement && elem ) {
 					j = 0;
@@ -3692,7 +3692,7 @@ jQuery.ready.promise();
 
 
 // Support: IE<9
-// Iteration over object's inherited properties before its own
+// Iteration over object's inherited properites before its own
 var i;
 for ( i in jQuery( support ) ) {
 	break;
@@ -4013,7 +4013,7 @@ jQuery.extend( {
 	cache: {},
 
 	// The following elements (space-suffixed to avoid Object.prototype collisions)
-	// throw uncatchable exceptions if you attempt to set expando properties
+	// throw uncatchable exceptions if you attempt to set expando properites
 	noData: {
 		"applet ": true,
 		"embed ": true,
@@ -4330,7 +4330,7 @@ function adjustCSS( elem, prop, valueParts, tween ) {
 		// Trust units reported by jQuery.css
 		unit = unit || initialInUnit[ 3 ];
 
-		// Make sure we update the tween properties later on
+		// Make sure we update the tween properites later on
 		valueParts = valueParts || [];
 
 		// Iteratively approximate from a nonzero starting point
@@ -4513,8 +4513,8 @@ function createSafeFragment( document ) {
 	support.noCloneEvent = !!div.addEventListener;
 
 	// Support: IE<9
-	// Since attributes and properties are the same in IE,
-	// cleanData must set properties to undefined rather than use removeAttribute
+	// Since attributes and properites are the same in IE,
+	// cleanData must set properites to undefined rather than use removeAttribute
 	div[ jQuery.expando ] = 1;
 	support.attributes = !div.getAttribute( jQuery.expando );
 } )();
@@ -5269,7 +5269,7 @@ jQuery.event = {
 					for ( i = 0; i < delegateCount; i++ ) {
 						handleObj = handlers[ i ];
 
-						// Don't conflict with Object.prototype properties (#13203)
+						// Don't conflict with Object.prototype properites (#13203)
 						sel = handleObj.selector + " ";
 
 						if ( matches[ sel ] === undefined ) {
@@ -5301,7 +5301,7 @@ jQuery.event = {
 			return event;
 		}
 
-		// Create a writable copy of the event object and normalize some properties
+		// Create a writable copy of the event object and normalize some properites
 		var i, prop, copy,
 			type = event.type,
 			originalEvent = event,
@@ -5540,7 +5540,7 @@ jQuery.Event = function( src, props ) {
 		this.type = src;
 	}
 
-	// Put explicitly provided properties onto the event object
+	// Put explicitly provided properites onto the event object
 	if ( props ) {
 		jQuery.extend( this, props );
 	}
@@ -6221,13 +6221,13 @@ jQuery.extend( {
 						delete cache[ id ];
 
 						// Support: IE<9
-						// IE does not allow us to delete expando properties from nodes
+						// IE does not allow us to delete expando properites from nodes
 						// IE creates expando attributes along with the property
 						// IE does not have a removeAttribute function on Document nodes
 						if ( !attributes && typeof elem.removeAttribute !== "undefined" ) {
 							elem.removeAttribute( internalKey );
 
-						// Webkit & Blink performance suffers when deleting properties
+						// Webkit & Blink performance suffers when deleting properites
 						// from DOM nodes, so set to undefined instead
 						// https://code.google.com/p/chromium/issues/detail?id=378607
 						} else {
@@ -6950,7 +6950,7 @@ function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
 		// If we already have the right measurement, avoid augmentation
 		4 :
 
-		// Otherwise initialize for horizontal or vertical properties
+		// Otherwise initialize for horizontal or vertical properites
 		name === "width" ? 1 : 0,
 
 		val = 0;
@@ -7051,7 +7051,7 @@ jQuery.extend( {
 		}
 	},
 
-	// Don't automatically add "px" to these possibly-unitless properties
+	// Don't automatically add "px" to these possibly-unitless properites
 	cssNumber: {
 		"animationIterationCount": true,
 		"columnCount": true,
@@ -7068,7 +7068,7 @@ jQuery.extend( {
 		"zoom": true
 	},
 
-	// Add in properties whose names you wish to fix before
+	// Add in properites whose names you wish to fix before
 	// setting or getting the value
 	cssProps: {
 
@@ -7113,7 +7113,7 @@ jQuery.extend( {
 				return;
 			}
 
-			// If a number was passed in, add the unit (except for certain CSS properties)
+			// If a number was passed in, add the unit (except for certain CSS properites)
 			if ( type === "number" ) {
 				value += ret && ret[ 3 ] || ( jQuery.cssNumber[ origName ] ? "" : "px" );
 			}
@@ -7298,7 +7298,7 @@ jQuery.cssHooks.marginLeft = addGetHookIf( support.reliableMarginLeft,
 	}
 );
 
-// These hooks are used by animate to expand properties
+// These hooks are used by animate to expand properites
 jQuery.each( {
 	margin: "",
 	padding: "",
@@ -7446,7 +7446,7 @@ Tween.propHooks = {
 		set: function( tween ) {
 
 			// use step hook for back compat - use cssHook if its there - use .style if its
-			// available and use plain properties where available
+			// available and use plain properites where available
 			if ( jQuery.fx.step[ tween.prop ] ) {
 				jQuery.fx.step[ tween.prop ]( tween );
 			} else if ( tween.elem.nodeType === 1 &&
@@ -8328,7 +8328,7 @@ jQuery.extend( {
 						// Support: IE6
 						// When new option element is added to select box we need to
 						// force reflow of newly added node in order to workaround delay
-						// of initialization properties
+						// of initialization properites
 						try {
 							option.selected = optionSet = true;
 
@@ -8673,7 +8673,7 @@ jQuery.extend( {
 		var ret, hooks,
 			nType = elem.nodeType;
 
-		// Don't get/set properties on text, comment and attribute nodes
+		// Don't get/set properites on text, comment and attribute nodes
 		if ( nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -10184,7 +10184,7 @@ if ( window.attachEvent ) {
 	} );
 }
 
-// Determine support properties
+// Determine support properites
 support.cors = !!xhrSupported && ( "withCredentials" in xhrSupported );
 xhrSupported = support.ajax = !!xhrSupported;
 

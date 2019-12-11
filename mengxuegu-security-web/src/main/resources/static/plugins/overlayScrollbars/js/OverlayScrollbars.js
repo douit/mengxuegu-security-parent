@@ -1551,7 +1551,7 @@
                      * @param template The template which defines the allowed values and types.
                      * @param writeErrors True if errors shall be logged to the console.
                      * @param diffObj If a object is passed then only valid differences to this object will be returned.
-                     * @returns {{}} A object which contains two objects called "default" and "prepared" which contains only the valid properties of the passed original object and discards not different values compared to the passed diffObj.
+                     * @returns {{}} A object which contains two objects called "default" and "prepared" which contains only the valid properites of the passed original object and discards not different values compared to the passed diffObj.
                      */
                     _validate : function (obj, template, writeErrors, diffObj) {
                         var validatedOptions = { };
@@ -5169,11 +5169,11 @@
                 }
 
                 /**
-                 * Sets the "top, right, bottom, left" properties, with a given prefix, of the given css object.
+                 * Sets the "top, right, bottom, left" properites, with a given prefix, of the given css object.
                  * @param targetCSSObject The css object to which the values shall be applied.
-                 * @param prefix The prefix of the "top, right, bottom, left" css properties. (example: 'padding-' is a valid prefix)
-                 * @param values A array of values which shall be applied to the "top, right, bottom, left" -properties. The array order is [top, right, bottom, left].
-                 * If this argument is undefined the value '' (empty string) will be applied to all properties.
+                 * @param prefix The prefix of the "top, right, bottom, left" css properites. (example: 'padding-' is a valid prefix)
+                 * @param values A array of values which shall be applied to the "top, right, bottom, left" -properites. The array order is [top, right, bottom, left].
+                 * If this argument is undefined the value '' (empty string) will be applied to all properites.
                  */
                 function setTopRightBottomLeft(targetCSSObject, prefix, values) {
                     if (values === undefined)
@@ -5660,7 +5660,7 @@
                     INSTANCES(pluginTargetElement, 0);
                     dispatchCallback('onDestroyed');
 
-                    //remove all properties and methods
+                    //remove all properites and methods
                     //for (var property in _base)
                     //    delete _base[property];
                     //_base = undefined;
@@ -5670,9 +5670,9 @@
                  * Scrolls to a given position or element.
                  * @param coordinates
                  * 1. Can be "coordinates" which looks like:
-                 *    { x : ?, y : ? } OR          Object with x and y properties
-                 *    { left : ?, top : ? } OR     Object with left and top properties
-                 *    { l : ?, t : ? } OR          Object with l and t properties
+                 *    { x : ?, y : ? } OR          Object with x and y properites
+                 *    { left : ?, top : ? } OR     Object with left and top properites
+                 *    { l : ?, t : ? } OR          Object with l and t properites
                  *    [ ?, ? ] OR                  Array where the first two element are the coordinates (first is x, second is y)
                  *    ?                            A single value which stays for both axis
                  *    A value can be a number, a string or a calculation.

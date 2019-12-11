@@ -269,8 +269,8 @@ Docs & License: https://fullcalendar.io/
                 }
             }
         };
-        // Generates an object with CSS properties/values that should be applied to an event segment element.
-        // Contains important positioning-related properties that should be applied to any event element, customized or not.
+        // Generates an object with CSS properites/values that should be applied to an event segment element.
+        // Contains important positioning-related properites that should be applied to any event element, customized or not.
         TimeGridEventRenderer.prototype.generateSegCss = function (seg) {
             var shouldOverlap = this.context.options.slotEventOverlap;
             var backwardCoord = seg.backwardCoord; // the left side if LTR. the right side if RTL. floating-point
@@ -483,7 +483,7 @@ Docs & License: https://fullcalendar.io/
         }
         /* Options
         ------------------------------------------------------------------------------------------------------------------*/
-        // Parses various options into properties of this object
+        // Parses various options into properites of this object
         TimeGrid.prototype.processOptions = function () {
             var slotDuration = this.opt('slotDuration');
             var snapDuration = this.opt('snapDuration');
@@ -788,7 +788,7 @@ Docs & License: https://fullcalendar.io/
             return this.slatPositions.tops[slatIndex] +
                 this.slatPositions.getHeight(slatIndex) * slatRemainder;
         };
-        // For each segment in an array, computes and assigns its top and bottom properties
+        // For each segment in an array, computes and assigns its top and bottom properites
         TimeGrid.prototype.computeSegVerticals = function (segs) {
             var eventMinHeight = this.opt('timeGridEventMinHeight');
             var i;
@@ -801,7 +801,7 @@ Docs & License: https://fullcalendar.io/
                 seg.bottom = Math.max(seg.top + eventMinHeight, this.computeDateTop(seg.end, dayDate));
             }
         };
-        // Given segments that already have their top/bottom properties computed, applies those values to
+        // Given segments that already have their top/bottom properites computed, applies those values to
         // the segments' elements.
         TimeGrid.prototype.assignSegVerticals = function (segs) {
             var i;
@@ -811,7 +811,7 @@ Docs & License: https://fullcalendar.io/
                 core.applyStyle(seg.el, this.generateSegVerticalCss(seg));
             }
         };
-        // Generates an object with CSS properties for the top/bottom coordinates of a segment element
+        // Generates an object with CSS properites for the top/bottom coordinates of a segment element
         TimeGrid.prototype.generateSegVerticalCss = function (seg) {
             return {
                 top: seg.top,

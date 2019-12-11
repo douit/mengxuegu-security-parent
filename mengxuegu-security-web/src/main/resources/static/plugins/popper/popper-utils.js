@@ -725,7 +725,7 @@ function getOffsetRect(element) {
  * @method
  * @memberof Popper.Utils
  * @argument {Element} element
- * @returns {Object} object containing width and height properties
+ * @returns {Object} object containing width and height properites
  */
 function getOuterSizes(element) {
   const window = element.ownerDocument.defaultView;
@@ -937,7 +937,7 @@ function runModifiers(modifiers, data, ends) {
     }
     const fn = modifier['function'] || modifier.fn; // eslint-disable-line dot-notation
     if (modifier.enabled && isFunction(fn)) {
-      // Add properties to offsets to make them a complete clientRect object
+      // Add properites to offsets to make them a complete clientRect object
       // we do this before each modifier to make sure the previous one doesn't
       // mess with these values
       data.offsets.popper = getClientRect(data.offsets.popper);
@@ -956,7 +956,7 @@ function runModifiers(modifiers, data, ends) {
  * @memberof Popper.Utils
  * @argument {Element} element - Element to apply the attributes to
  * @argument {Object} styles
- * Object with a list of properties and values which will be applied to the element
+ * Object with a list of properites and values which will be applied to the element
  */
 function setAttributes(element, attributes) {
   Object.keys(attributes).forEach(function (prop) {
@@ -975,7 +975,7 @@ function setAttributes(element, attributes) {
  * @memberof Popper.Utils
  * @argument {Element} element - Element to apply the style to
  * @argument {Object} styles
- * Object with a list of properties and values which will be applied to the element
+ * Object with a list of properites and values which will be applied to the element
  */
 function setStyles(element, styles) {
   Object.keys(styles).forEach(prop => {

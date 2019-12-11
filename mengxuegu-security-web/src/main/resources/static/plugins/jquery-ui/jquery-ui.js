@@ -100,7 +100,7 @@ $.widget = function( name, base, prototype ) {
 		}
 	};
 
-	// Extend with the existing constructor to carry over any static properties
+	// Extend with the existing constructor to carry over any static properites
 	$.extend( constructor, existingConstructor, {
 		version: prototype.version,
 
@@ -682,7 +682,7 @@ $.Widget.prototype = {
 		// so we need to reset the target on the new event
 		event.target = this.element[ 0 ];
 
-		// Copy original event properties over to the new event
+		// Copy original event properites over to the new event
 		orig = event.originalEvent;
 		if ( orig ) {
 			for ( prop in orig ) {
@@ -1468,7 +1468,7 @@ $.effects = {
 supportElem.style.cssText = "background-color:rgba(1,1,1,.5)";
 support.rgba = supportElem.style.backgroundColor.indexOf( "rgba" ) > -1;
 
-// Define cache name and alpha properties
+// Define cache name and alpha properites
 // for rgba and hsla spaces
 each( spaces, function( spaceName, space ) {
 	space.cache = "_" + spaceName;
@@ -1601,7 +1601,7 @@ color.fn = jQuery.extend( color.prototype, {
 							inst[ cache ] = space.to( inst._rgba );
 						}
 
-						// This is the only case where we allow nulls for ALL properties.
+						// This is the only case where we allow nulls for ALL properites.
 						// call clamp with alwaysAllowEmpty
 						inst[ cache ][ prop.idx ] = clamp( red[ key ], prop, true );
 					} );
@@ -1907,7 +1907,7 @@ each( spaces, function( spaceName, space ) {
 } );
 
 // Add cssHook and .fx.step function for each named hook.
-// accept a space separated string of properties
+// accept a space separated string of properites
 color.hook = function( hook ) {
 	var hooks = hook.split( " " );
 	each( hooks, function( i, hook ) {
@@ -2149,7 +2149,7 @@ $.effects.animateClass = function( value, duration, easing, callback ) {
 			applyClassChange();
 
 			// For each animated element,
-			// clear all css properties that were animated
+			// clear all css properites that were animated
 			$.each( arguments, function() {
 				var el = this.el;
 				$.each( this.diff, function( key ) {
@@ -2231,7 +2231,7 @@ if ( $.expr && $.expr.filters && $.expr.filters.animated ) {
 if ( $.uiBackCompat !== false ) {
 	$.extend( $.effects, {
 
-		// Saves a set of properties in a data storage
+		// Saves a set of properites in a data storage
 		save: function( element, set ) {
 			var i = 0, length = set.length;
 			for ( ; i < length; i++ ) {
@@ -2241,7 +2241,7 @@ if ( $.uiBackCompat !== false ) {
 			}
 		},
 
-		// Restores a set of previously saved properties from a data storage
+		// Restores a set of previously saved properites from a data storage
 		restore: function( element, set ) {
 			var val, i = 0, length = set.length;
 			for ( ; i < length; i++ ) {
@@ -2259,7 +2259,7 @@ if ( $.uiBackCompat !== false ) {
 			return mode;
 		},
 
-		// Wraps the element around a wrapper that copies position properties
+		// Wraps the element around a wrapper that copies position properites
 		createWrapper: function( element ) {
 
 			// If the element is already wrapped, return it
@@ -2310,7 +2310,7 @@ if ( $.uiBackCompat !== false ) {
 			// lose the reference to the wrapped element
 			wrapper = element.parent();
 
-			// Transfer positioning properties to the wrapper
+			// Transfer positioning properites to the wrapper
 			if ( element.css( "position" ) === "static" ) {
 				wrapper.css( { position: "relative" } );
 				element.css( { position: "relative" } );
@@ -2536,7 +2536,7 @@ $.extend( $.effects, {
 	},
 
 	// Removes a placeholder if it exists and restores
-	// properties that were modified during placeholder creation
+	// properites that were modified during placeholder creation
 	cleanUp: function( element ) {
 		$.effects.restoreStyle( element );
 		$.effects.removePlaceholder( element );
@@ -3512,7 +3512,7 @@ var effectsEffectSize = $.effects.define( "size", function( options, done ) {
 		}
 	}
 
-	// Adjust the position properties based on the provided origin points
+	// Adjust the position properites based on the provided origin points
 	if ( origin ) {
 		baseline = $.effects.getBaseline( origin, original );
 		from.top = ( original.outerHeight - from.outerHeight ) * baseline.y + pos.top;
@@ -9759,7 +9759,7 @@ $.widget( "ui.draggable", $.ui.mouse, {
 
 	_mouseDrag: function( event, noPropagation ) {
 
-		// reset any necessary cached properties (see #5009)
+		// reset any necessary cached properites (see #5009)
 		if ( this.hasFixedAncestor ) {
 			this.offset.parent = this._getParentOffset();
 		}
@@ -10315,7 +10315,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 				draggable.cancelHelperRemoval = true;
 				sortable.cancelHelperRemoval = false;
 
-				// Use _storedCSS To restore properties in the sortable,
+				// Use _storedCSS To restore properites in the sortable,
 				// as this also handles revert (#9675) since the draggable
 				// may have modified them in unexpected ways (#8809)
 				sortable._storedCSS = {

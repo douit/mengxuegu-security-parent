@@ -460,7 +460,7 @@ var ColReorder = function( dt, opts )
 
 		/**
 		 * Information which is used for positioning the insert cusor and knowing where to do the
-		 * insert. Array of objects with the properties:
+		 * insert. Array of objects with the properites:
 		 *   x: x-axis position
 		 *   to: insert point
 		 *  @property aoTargets

@@ -985,7 +985,7 @@ define(["./raphael.core"], function(R) {
      = (array) array of values of the attribute if attrsNames is passed in.
      = (object) object of attributes if nothing is passed in.
      > Possible parameters
-     # <p>Please refer to the <a href="http://www.w3.org/TR/SVG/" title="The W3C Recommendation for the SVG language describes these properties in detail.">SVG specification</a> for an explanation of these parameters.</p>
+     # <p>Please refer to the <a href="http://www.w3.org/TR/SVG/" title="The W3C Recommendation for the SVG language describes these properites in detail.">SVG specification</a> for an explanation of these parameters.</p>
      o arrow-end (string) arrowhead on the end of the path. The format for string is `<type>[-<width>[-<length>]]`. Possible types: `classic`, `block`, `open`, `oval`, `diamond`, `none`, width: `wide`, `narrow`, `medium`, length: `long`, `short`, `midium`.
      o clip-rect (string) comma or space separated values: x, y, width and height
      o cursor (string) CSS type of the cursor

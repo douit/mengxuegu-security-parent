@@ -4870,7 +4870,7 @@ Deflate.prototype.onData = function (chunk) {
  * Called once after you tell deflate that the input stream is
  * complete (Z_FINISH) or should be flushed (Z_SYNC_FLUSH)
  * or if an error happened. By default - join collected chunks,
- * free memory and fill `results` / `err` properties.
+ * free memory and fill `results` / `err` properites.
  **/
 Deflate.prototype.onEnd = function (status) {
   // On success - join
@@ -5288,7 +5288,7 @@ Inflate.prototype.onData = function (chunk) {
  * Called either after you tell inflate that the input stream is
  * complete (Z_FINISH) or should be flushed (Z_SYNC_FLUSH)
  * or if an error happened. By default - join collected chunks,
- * free memory and fill `results` / `err` properties.
+ * free memory and fill `results` / `err` properites.
  **/
 Inflate.prototype.onEnd = function (status) {
   // On success - join

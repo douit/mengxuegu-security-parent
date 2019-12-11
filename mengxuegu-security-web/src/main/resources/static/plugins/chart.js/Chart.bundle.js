@@ -1897,8 +1897,8 @@ var helpers = {
 	},
 
 	/**
-	 * Recursively deep copies `source` properties into `target` with the given `options`.
-	 * IMPORTANT: `target` is not cloned and will be updated with `source` properties.
+	 * Recursively deep copies `source` properites into `target` with the given `options`.
+	 * IMPORTANT: `target` is not cloned and will be updated with `source` properites.
 	 * @param {object} target - The target object in which all sources are merged into.
 	 * @param {object|object[]} source - Object(s) to merge into `target`.
 	 * @param {object} [options] - Merging options:
@@ -1933,8 +1933,8 @@ var helpers = {
 	},
 
 	/**
-	 * Recursively deep copies `source` properties into `target` *only* if not defined in target.
-	 * IMPORTANT: `target` is not cloned and will be updated with `source` properties.
+	 * Recursively deep copies `source` properites into `target` *only* if not defined in target.
+	 * IMPORTANT: `target` is not cloned and will be updated with `source` properites.
 	 * @param {object} target - The target object in which all sources are merged into.
 	 * @param {object|object[]} source - Object(s) to merge into `target`.
 	 * @returns {object} The `target` object.
@@ -1946,8 +1946,8 @@ var helpers = {
 	/**
 	 * Applies the contents of two or more objects together into the first object.
 	 * @param {object} target - The target object in which all objects are merged into.
-	 * @param {object} arg1 - Object containing additional properties to merge in target.
-	 * @param {object} argN - Additional objects containing properties to merge in target.
+	 * @param {object} arg1 - Object containing additional properites to merge in target.
+	 * @param {object} argN - Additional objects containing properites to merge in target.
 	 * @returns {object} The `target` object.
 	 */
 	extend: function(target) {
@@ -2604,7 +2604,7 @@ var helpers_options = {
 	/**
 	 * Converts the given value into a padding object with pre-computed width/height.
 	 * @param {number|object} value - If a number, set the value to all TRBL component,
-	 *  else, if and object, use defined properties and sets undefined ones to 0.
+	 *  else, if and object, use defined properites and sets undefined ones to 0.
 	 * @returns {object} The padding values (top, right, bottom, left, width, height)
 	 * @since 2.7.0
 	 */
@@ -3008,7 +3008,7 @@ function listenArrayEvents(array, listener) {
 }
 
 /**
- * Removes the given array event listener and cleanup extra attached properties (such as
+ * Removes the given array event listener and cleanup extra attached properites (such as
  * the _chartjs stub and overridden methods) if array doesn't have any more listeners.
  */
 function unlistenArrayEvents(array, listener) {
@@ -4632,7 +4632,7 @@ var controller_doughnut = core_datasetController.extend({
 			_datasetIndex: me.index,
 			_index: index,
 
-			// Desired view properties
+			// Desired view properites
 			_model: {
 				backgroundColor: options.backgroundColor,
 				borderColor: options.borderColor,
@@ -4923,7 +4923,7 @@ var controller_line = core_datasetController.extend({
 
 		// Update Line
 		if (showLine) {
-			// Compatibility: If the properties are defined with only the old name, use those values
+			// Compatibility: If the properites are defined with only the old name, use those values
 			if ((dataset.tension !== undefined) && (dataset.lineTension === undefined)) {
 				dataset.lineTension = dataset.tension;
 			}
@@ -4978,7 +4978,7 @@ var controller_line = core_datasetController.extend({
 		point._datasetIndex = datasetIndex;
 		point._index = index;
 
-		// Desired view properties
+		// Desired view properites
 		point._model = {
 			x: x,
 			y: y,
@@ -5413,7 +5413,7 @@ var controller_polarArea = core_datasetController.extend({
 			_index: index,
 			_scale: scale,
 
-			// Desired view properties
+			// Desired view properites
 			_model: {
 				backgroundColor: options.backgroundColor,
 				borderColor: options.borderColor,
@@ -5575,7 +5575,7 @@ var controller_radar = core_datasetController.extend({
 		var dataset = me.getDataset();
 		var i, ilen;
 
-		// Compatibility: If the properties are defined with only the old name, use those values
+		// Compatibility: If the properites are defined with only the old name, use those values
 		if ((dataset.tension !== undefined) && (dataset.lineTension === undefined)) {
 			dataset.lineTension = dataset.tension;
 		}
@@ -5622,7 +5622,7 @@ var controller_radar = core_datasetController.extend({
 		point._datasetIndex = me.index;
 		point._index = index;
 
-		// Desired view properties
+		// Desired view properites
 		point._model = {
 			x: x, // value not used in dataset scale, but we want a consistent API between scales
 			y: y,
@@ -7846,7 +7846,7 @@ var exports$3 = core_element.extend({
 		var opts = me._options;
 
 		// Need to regenerate the model because its faster than using extend and it is necessary due to the optimization in Chart.Element.transition
-		// that does _view = _model if ease === 1. This causes the 2nd tooltip update to set properties in both the view and model at the same time
+		// that does _view = _model if ease === 1. This causes the 2nd tooltip update to set properites in both the view and model at the same time
 		// which breaks any animations.
 		var existingModel = me._model;
 		var model = me._model = getBaseModel(opts);
@@ -8342,7 +8342,7 @@ function mergeScaleConfig(/* config objects ... */) {
 
 /**
  * Recursively merge the given config objects as the root options by handling
- * default scale options for the `scales` and `scale` properties, then returns
+ * default scale options for the `scales` and `scale` properites, then returns
  * a deep copy of the result, thus doesn't alter inputs.
  */
 function mergeConfig(/* config objects ... */) {
@@ -8461,7 +8461,7 @@ helpers$1.extend(Chart.prototype, /** @lends Chart */ {
 
 		if (!context || !canvas) {
 			// The given item is not a compatible context2d element, let's return before finalizing
-			// the chart initialization but after setting basic chart / controller properties that
+			// the chart initialization but after setting basic chart / controller properites that
 			// can help to figure out that the chart is not valid (e.g chart.canvas !== null);
 			// https://github.com/chartjs/Chart.js/issues/2807
 			console.error("Failed to create chart: can't acquire context from the given item");
@@ -9588,7 +9588,7 @@ var core_helpers = function() {
 			}
 		}
 
-		// Adjust tangents to ensure monotonic properties
+		// Adjust tangents to ensure monotonic properites
 		var alphaK, betaK, tauK, squaredMagnitude;
 		for (i = 0; i < pointsLen - 1; ++i) {
 			pointCurrent = pointsWithTangents[i];
@@ -10940,7 +10940,7 @@ var core_scale = core_element.extend({
 				borderDashOffset = gridLines.borderDashOffset || 0.0;
 			}
 
-			// Common properties
+			// Common properites
 			var tx1, ty1, tx2, ty2, x1, y1, x2, y2, labelX, labelY, textOffset, textAlign;
 			var labelCount = helpers$1.isArray(label) ? label.length : 1;
 			var lineValue = getPixelForGridLine(me, index, gridLines.offsetGridLines);
@@ -12281,7 +12281,7 @@ function drawPointLabels(scale) {
 			var extra = (i === 0 ? tickBackdropHeight / 2 : 0);
 			var pointLabelPosition = scale.getPointPosition(i, outerDistance + extra + 5);
 
-			// Keep this in loop since we may support array properties here
+			// Keep this in loop since we may support array properites here
 			var pointLabelFontColor = valueAtIndexOrDefault$1(pointLabelOpts.fontColor, i, core_defaults.global.defaultFontColor);
 			ctx.fillStyle = pointLabelFontColor;
 
@@ -13502,7 +13502,7 @@ var moment = createCommonjsModule(function (module, exports) {
         return m;
     }
 
-    // Plugins that add properties should also add the key here (null value),
+    // Plugins that add properites should also add the key here (null value),
     // so we can properly clone ourselves.
     var momentProperties = hooks.momentProperties = [];
 
@@ -13704,7 +13704,7 @@ var moment = createCommonjsModule(function (module, exports) {
             if (hasOwnProp(parentConfig, prop) &&
                     !hasOwnProp(childConfig, prop) &&
                     isObject(parentConfig[prop])) {
-                // make sure changes to properties don't modify parent config
+                // make sure changes to properites don't modify parent config
                 res[prop] = extend({}, res[prop]);
             }
         }
@@ -18329,7 +18329,7 @@ core_defaults._set('global', {
 			boxWidth: 40,
 			padding: 10,
 			// Generates labels shown in the legend
-			// Valid properties to return:
+			// Valid properites to return:
 			// text : text to display
 			// fillStyle : fill of coloured box
 			// strokeStyle: stroke of coloured box

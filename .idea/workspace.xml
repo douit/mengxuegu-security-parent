@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ceafd93-07ae-48a3-a92d-af67994754b0" name="Default Changelist" comment="创建spring-security项目">
-      <change afterPath="$PROJECT_DIR$/.idea/mengxuegu-security-parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/ReloadMessageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/controller/CustomLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/AuthenticationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/SecurityProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/security/CutomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7ceafd93-07ae-48a3-a92d-af67994754b0" name="Default Changelist" comment="spring-security项目">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/mengxuegu-security-core.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/chart.js/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/chart.js/Chart.bundle.js" afterDir="false" />
@@ -60,7 +50,6 @@
       <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/summernote/summernote-lite.js" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/summernote/summernote-lite.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/summernote/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/summernote/summernote.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/toastr/toastr.css" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/static/plugins/toastr/toastr.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -409,6 +398,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="ts.external.directory.path" value="D:\IntelliJ IDEA 2019.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -464,7 +454,7 @@
       <workItem from="1575899673708" duration="882000" />
       <workItem from="1575900580133" duration="673000" />
       <workItem from="1575901316229" duration="414000" />
-      <workItem from="1576065821612" duration="7249000" />
+      <workItem from="1576065821612" duration="9960000" />
     </task>
     <task id="LOCAL-00001" summary="创建spring-security项目">
       <created>1575856403549</created>
@@ -480,17 +470,23 @@
       <option name="project" value="LOCAL" />
       <updated>1575864926835</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="spring-security项目">
+      <created>1576077685932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576077685932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15971000" />
+    <option name="totallyTimeSpent" value="18682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -498,9 +494,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12249443" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12249443" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,7 +528,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建spring-security项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建spring-security项目" />
+    <MESSAGE value="spring-security项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring-security项目" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-base/src/main/resources/logback.xml">

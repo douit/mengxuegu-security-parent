@@ -52,7 +52,7 @@ declare const makeShallowClone: (o: any) => Dictionary;
 export { makeShallowClone };
 /**
  * A function to recursively merge an object, copying over all
- * properties of the old object missing from the target object.
+ * properites of the old object missing from the target object.
  * In case a prop in is an object, the method is called recursively.
  * This is a non-mutating method.
  * @param {Object} old is the old object from which the missing props are copied.

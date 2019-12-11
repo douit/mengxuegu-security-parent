@@ -996,7 +996,7 @@ $.extend( Responsive.prototype, {
 
 /**
  * List of default breakpoints. Each item in the array is an object with two
- * properties:
+ * properites:
  *
  * * `name` - the breakpoint name.
  * * `width` - the breakpoint width
@@ -1271,7 +1271,7 @@ Responsive.defaults = {
 	 * default object is set to that value, and the defaults used for the rest
 	 * of the object - this is for ease of implementation.
 	 *
-	 * The object consists of the following properties:
+	 * The object consists of the following properites:
 	 *
 	 * * `display` - A function that is used to show and hide the hidden details
 	 * * `renderer` - function that is called for display of the child row data.

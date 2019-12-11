@@ -69,7 +69,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	// create a fake namespace object
 /******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 2: merge all properites of value into the ns
 /******/ 	// mode & 4: return value when already ns object
 /******/ 	// mode & 8|1: behave like require
 /******/ 	__webpack_require__.t = function(value, mode) {
@@ -3908,7 +3908,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
      **
      > Parameters
      **
-     - glow (object) #optional parameters object with all properties optional:
+     - glow (object) #optional parameters object with all properites optional:
      o {
      o     width (number) size of the glow, default is `10`
      o     fill (boolean) will it be filled, default is `false`
@@ -5438,7 +5438,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
      > Parameters
      **
      - token (string) string to format
-     - json (object) object which properties will be used as a replacement
+     - json (object) object which properites will be used as a replacement
      = (string) formated string
      > Usage
      | // this will draw a rectangular shape equivalent to "M10,20h40v50h-40z"
@@ -5454,7 +5454,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     \*/
     R.fullfill = (function () {
         var tokenRegex = /\{([^\}]+)\}/g,
-            objNotationRegex = /(?:(?:^|\.)(.+?)(?=\[|\.|$|\()|\[('|")(.+?)\2\])(\(\))?/g, // matches .xxxxx or ["xxxxx"] to run over object properties
+            objNotationRegex = /(?:(?:^|\.)(.+?)(?=\[|\.|$|\()|\[('|")(.+?)\2\])(\(\))?/g, // matches .xxxxx or ["xxxxx"] to run over object properites
             replacer = function (all, key, obj) {
                 var res = obj;
                 key.replace(objNotationRegex, function (all, name, quote, quotedName, isFunc) {
@@ -6543,7 +6543,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
      = (array) array of values of the attribute if attrsNames is passed in.
      = (object) object of attributes if nothing is passed in.
      > Possible parameters
-     # <p>Please refer to the <a href="http://www.w3.org/TR/SVG/" title="The W3C Recommendation for the SVG language describes these properties in detail.">SVG specification</a> for an explanation of these parameters.</p>
+     # <p>Please refer to the <a href="http://www.w3.org/TR/SVG/" title="The W3C Recommendation for the SVG language describes these properites in detail.">SVG specification</a> for an explanation of these parameters.</p>
      o arrow-end (string) arrowhead on the end of the path. The format for string is `<type>[-<width>[-<length>]]`. Possible types: `classic`, `block`, `open`, `oval`, `diamond`, `none`, width: `wide`, `narrow`, `medium`, length: `long`, `short`, `midium`.
      o clip-rect (string) comma or space separated values: x, y, width and height
      o cursor (string) CSS type of the cursor

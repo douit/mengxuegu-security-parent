@@ -48,7 +48,7 @@ var Lightbox = (function ($) {
 			key: 'Default',
 
 			/**
-       Class properties:
+       Class properites:
    	 _$element: null -> the <a> element currently being displayed
     _$modal: The bootstrap modal generated
        _$modalDialog: The .modal-dialog
@@ -65,7 +65,7 @@ var Lightbox = (function ($) {
     _galleryIndex: The current index of the _$galleryItems being shown
    	 _config: {} the options for the modal
     _modalId: unique id for the current lightbox
-    _padding / _border: CSS properties for the modal container; these are used to calculate the available space for the content
+    _padding / _border: CSS properites for the modal container; these are used to calculate the available space for the content
    	 */
 
 			get: function get() {

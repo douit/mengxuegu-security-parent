@@ -117,8 +117,8 @@
 
     /*
      * Mapael Prototype
-     * Defines all methods and properties needed by Mapael
-     * Each mapael object inherits their properties and methods from this prototype
+     * Defines all methods and properites needed by Mapael
+     * Each mapael object inherits their properites and methods from this prototype
      */
     Mapael.prototype = {
 

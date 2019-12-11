@@ -177,7 +177,7 @@
         return m;
     }
 
-    // Plugins that add properties should also add the key here (null value),
+    // Plugins that add properites should also add the key here (null value),
     // so we can properly clone ourselves.
     var momentProperties = hooks.momentProperties = [];
 
@@ -379,7 +379,7 @@
             if (hasOwnProp(parentConfig, prop) &&
                     !hasOwnProp(childConfig, prop) &&
                     isObject(parentConfig[prop])) {
-                // make sure changes to properties don't modify parent config
+                // make sure changes to properites don't modify parent config
                 res[prop] = extend({}, res[prop]);
             }
         }

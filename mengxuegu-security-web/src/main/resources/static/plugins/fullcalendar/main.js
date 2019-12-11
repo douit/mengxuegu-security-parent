@@ -2855,7 +2855,7 @@ Docs & License: https://fullcalendar.io/
             .replace(/"/g, '&quot;')
             .replace(/\n/g, '<br />');
     }
-    // Given a hash of CSS properties, returns a string of CSS.
+    // Given a hash of CSS properites, returns a string of CSS.
     // Uses property names as-is (no camel-case conversion). Will not make statements for null/undefined values.
     function cssToStr(cssProps) {
         var statements = [];
@@ -3011,7 +3011,7 @@ Docs & License: https://fullcalendar.io/
         return null;
     }
     /*
-    Will NOT populate extendedProps with the leftover properties.
+    Will NOT populate extendedProps with the leftover properites.
     Will NOT populate date-related props.
     The EventNonDateInput has been normalized (id => publicId, etc).
     */
@@ -5315,7 +5315,7 @@ Docs & License: https://fullcalendar.io/
             isValid = rangesIntersect(currentInfo.range, validRange);
             return {
                 // constraint for where prev/next operations can go and where events can be dragged/resized to.
-                // an object with optional start and end properties.
+                // an object with optional start and end properites.
                 validRange: validRange,
                 // range the view is formally responsible for.
                 // for example, a month view might have 1st-31st, excluding padded dates
@@ -5339,7 +5339,7 @@ Docs & License: https://fullcalendar.io/
                 // pass a fallback (might be null) ^
             };
         };
-        // Builds an object with optional start/end properties.
+        // Builds an object with optional start/end properites.
         // Indicates the minimum/maximum dates to display.
         // not responsible for trimming hidden days.
         DateProfileGenerator.prototype.buildValidRange = function () {
@@ -5349,7 +5349,7 @@ Docs & License: https://fullcalendar.io/
         // Builds a structure with info about the "current" range, the range that is
         // highlighted as being the current month for example.
         // See build() for a description of `direction`.
-        // Guaranteed to have `range` and `unit` properties. `duration` is optional.
+        // Guaranteed to have `range` and `unit` properites. `duration` is optional.
         DateProfileGenerator.prototype.buildCurrentRangeInfo = function (date, direction) {
             var _a = this, viewSpec = _a.viewSpec, dateEnv = _a.dateEnv;
             var duration = null;
@@ -7885,7 +7885,7 @@ Docs & License: https://fullcalendar.io/
         FgEventRenderer.prototype.computeDisplayEventEnd = function () {
             return true;
         };
-        // Utility for generating event skin-related CSS properties
+        // Utility for generating event skin-related CSS properites
         FgEventRenderer.prototype.getSkinCss = function (ui) {
             return {
                 'background-color': ui.backgroundColor,

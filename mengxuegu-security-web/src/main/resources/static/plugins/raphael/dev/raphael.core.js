@@ -3778,7 +3778,7 @@ define(["eve"], function(eve) {
      **
      > Parameters
      **
-     - glow (object) #optional parameters object with all properties optional:
+     - glow (object) #optional parameters object with all properites optional:
      o {
      o     width (number) size of the glow, default is `10`
      o     fill (boolean) will it be filled, default is `false`
@@ -5308,7 +5308,7 @@ define(["eve"], function(eve) {
      > Parameters
      **
      - token (string) string to format
-     - json (object) object which properties will be used as a replacement
+     - json (object) object which properites will be used as a replacement
      = (string) formated string
      > Usage
      | // this will draw a rectangular shape equivalent to "M10,20h40v50h-40z"
@@ -5324,7 +5324,7 @@ define(["eve"], function(eve) {
     \*/
     R.fullfill = (function () {
         var tokenRegex = /\{([^\}]+)\}/g,
-            objNotationRegex = /(?:(?:^|\.)(.+?)(?=\[|\.|$|\()|\[('|")(.+?)\2\])(\(\))?/g, // matches .xxxxx or ["xxxxx"] to run over object properties
+            objNotationRegex = /(?:(?:^|\.)(.+?)(?=\[|\.|$|\()|\[('|")(.+?)\2\])(\(\))?/g, // matches .xxxxx or ["xxxxx"] to run over object properites
             replacer = function (all, key, obj) {
                 var res = obj;
                 key.replace(objNotationRegex, function (all, name, quote, quotedName, isFunc) {

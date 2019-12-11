@@ -4,7 +4,7 @@ Copyright (c) 2007-2013 IOLA and Ole Laursen.
 Licensed under the MIT license.
 
 Error bars are used to show standard deviation and other statistical
-properties in a plot.
+properites in a plot.
 
 * Created by Rui Pereira  -  rui (dot) pereira (at) gmail (dot) com
 

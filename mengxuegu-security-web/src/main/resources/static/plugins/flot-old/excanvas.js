@@ -574,7 +574,7 @@ if (!document.createElement('canvas').getContext) {
     this.aStack_ = [];
     this.currentPath_ = [];
 
-    // Canvas context properties
+    // Canvas context properites
     this.strokeStyle = '#000';
     this.fillStyle = '#000';
 

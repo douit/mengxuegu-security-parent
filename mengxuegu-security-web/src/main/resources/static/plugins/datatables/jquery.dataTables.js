@@ -1685,7 +1685,7 @@
 	 *  @param {object} src The model object which holds all parameters that can be
 	 *    mapped.
 	 *  @param {object} user The object to convert from camel case to Hungarian.
-	 *  @param {boolean} force When set to `true`, properties which already have a
+	 *  @param {boolean} force When set to `true`, properites which already have a
 	 *    Hungarian value in the `user` object will be overwritten. Otherwise they
 	 *    won't be.
 	 *  @memberof DataTable#oApi
@@ -2214,7 +2214,7 @@
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {string} sParam Parameter in aoColumns to look for - typically
 	 *    bVisible or bSearchable
-	 *  @returns {array} Array of indexes with matched properties
+	 *  @returns {array} Array of indexes with matched properites
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnGetColumns( oSettings, sParam )
@@ -2643,7 +2643,7 @@
 							a.splice( 0, i+1 );
 							innerSrc = a.join('.');
 	
-							// Traverse each entry in the array getting the properties requested
+							// Traverse each entry in the array getting the properites requested
 							if ( $.isArray( data ) ) {
 								for ( var j=0, jLen=data.length ; j<jLen ; j++ ) {
 									out.push( fetchData( data[j], type, innerSrc ) );
@@ -2746,7 +2746,7 @@
 						b.splice( 0, i+1 );
 						innerSrc = b.join('.');
 	
-						// Traverse each entry in the array setting the properties requested
+						// Traverse each entry in the array setting the properites requested
 						if ( $.isArray( val ) )
 						{
 							for ( var j=0, jLen=val.length ; j<jLen ; j++ )
@@ -6060,7 +6060,7 @@
 			var sTitle = col.sTitle.replace( /<.*?>/g, "" );
 			var th = col.nTh;
 	
-			// IE7 is throwing an error when setting these properties with jQuery's
+			// IE7 is throwing an error when setting these properites with jQuery's
 			// attr() and removeAttr() methods...
 			th.removeAttribute('aria-sort');
 	
@@ -6527,7 +6527,7 @@
 	 * deep copy array init values (such as aaSorting) since the dev wouldn't be
 	 * able to override them, but we do want to deep copy arrays.
 	 *  @param {object} out Object to extend
-	 *  @param {object} extender Object from which the properties will be applied to
+	 *  @param {object} extender Object from which the properites will be applied to
 	 *      out
 	 *  @param {boolean} breakRefs If true, then arrays will be sliced to take an
 	 *      independent copy with the exception of the `data` or `aaData` parameters
@@ -7183,7 +7183,7 @@
 	
 	_Api.extend = function ( scope, obj, ext )
 	{
-		// Only extend API instances and static properties of the API
+		// Only extend API instances and static properites of the API
 		if ( ! ext.length || ! obj || ( ! (obj instanceof _Api) && ! obj.__dt_wrapper ) ) {
 			return;
 		}
@@ -7494,7 +7494,7 @@
 	 * If you require paging information for another table, use the `table()` method
 	 * with a suitable selector.
 	 *
-	 * @return {object} Object with the following properties set:
+	 * @return {object} Object with the following properites set:
 	 *  * `page` - Current page index (zero based - i.e. the first page is `0`)
 	 *  * `pages` - Total number of pages
 	 *  * `start` - Display index for the first record shown on the current page
@@ -9268,7 +9268,7 @@
 	 *  @param {object} src The model object which holds all parameters that can be
 	 *    mapped.
 	 *  @param {object} user The object to convert from camel case to Hungarian.
-	 *  @param {boolean} force When set to `true`, properties which already have a
+	 *  @param {boolean} force When set to `true`, properites which already have a
 	 *    Hungarian value in the `user` object will be overwritten. Otherwise they
 	 *    won't be.
 	 */
@@ -9898,7 +9898,7 @@
 	
 	
 	/*
-	 * Developer note: The properties of the object below are given in Hungarian
+	 * Developer note: The properites of the object below are given in Hungarian
 	 * notation, that was used as the interface for DataTables prior to v1.10, however
 	 * from v1.10 onwards the primary interface is camel case. In order to avoid
 	 * breaking backwards compatibility utterly with this change, the Hungarian
@@ -10042,7 +10042,7 @@
 		 * how it is defined. These are:
 		 *
 		 * * `string` - Set the URL from where the data should be loaded from.
-		 * * `object` - Define properties for `jQuery.ajax`.
+		 * * `object` - Define properites for `jQuery.ajax`.
 		 * * `function` - Custom data get function
 		 *
 		 * `string`
@@ -10346,7 +10346,7 @@
 	
 		/**
 		 * Replace a DataTable which matches the given selector and replace it with
-		 * one which has the properties of the new initialisation object passed. If no
+		 * one which has the properites of the new initialisation object passed. If no
 		 * table matches the selector, then the new DataTable will be constructed as
 		 * per normal.
 		 *  @type boolean
@@ -11114,7 +11114,7 @@
 		 * Callback which allows modification of the state to be saved. Called when the table
 		 * has changed state a new state save is required. This method allows modification of
 		 * the state saving object prior to actually doing the save, including addition or
-		 * other state properties or modification. Note that for plug-in authors, you should
+		 * other state properites or modification. Note that for plug-in authors, you should
 		 * use the `stateSaveParams` event to save parameters for a plug-in.
 		 *  @type function
 		 *  @param {object} settings DataTables settings object
@@ -11749,7 +11749,7 @@
 			 * All of the language information can be stored in a file on the
 			 * server-side, which DataTables will look up if this parameter is passed.
 			 * It must store the URL of the language file, which is in a JSON format,
-			 * and the object has the same properties as the oLanguage object in the
+			 * and the object has the same properites as the oLanguage object in the
 			 * initialiser object (i.e. the above parameters). Please refer to one of
 			 * the example language files to see how this works in action.
 			 *  @type string
@@ -12316,7 +12316,7 @@
 	
 		/**
 		 * This property can be used to read data from any data source property,
-		 * including deeply nested objects / properties. `data` can be given in a
+		 * including deeply nested objects / properites. `data` can be given in a
 		 * number of different ways which effect its behaviour:
 		 *
 		 * * `integer` - treated as an array index for the data source. This is the
@@ -13932,7 +13932,7 @@
 		 * use through the `dom` initialisation option.
 		 * 
 		 * Each feature plug-in is described by an object which must have the
-		 * following properties:
+		 * following properites:
 		 * 
 		 * * `fnInit` - function that is used to initialise the plug-in,
 		 * * `cFeature` - a character so the feature can be enabled by the `dom`
@@ -14284,7 +14284,7 @@
 			 * when a column is sorted upon. The order for each type that is defined,
 			 * is defined by the functions available in this object.
 			 *
-			 * Each ordering option can be described by three properties added to
+			 * Each ordering option can be described by three properites added to
 			 * this object:
 			 *
 			 * * `{type}-pre` - Pre-formatting function
@@ -14355,7 +14355,7 @@
 	
 		//
 		// Depreciated
-		// The following properties are retained for backwards compatiblity only.
+		// The following properites are retained for backwards compatiblity only.
 		// The should not be used in new projects and will be removed in a future
 		// version
 		//
@@ -15161,7 +15161,7 @@
 		return $(this).dataTable( opts ).api();
 	};
 
-	// All properties that are available to $.fn.dataTable should also be
+	// All properites that are available to $.fn.dataTable should also be
 	// available on $.fn.DataTable
 	$.each( DataTable, function ( prop, val ) {
 		$.fn.DataTable[ prop ] = val;
@@ -15219,7 +15219,7 @@
 	 * State save event, fired when the table has changed state a new state save
 	 * is required. This event allows modification of the state saving object
 	 * prior to actually doing the save, including addition or other state
-	 * properties (for plug-ins) or modification of a DataTables core property.
+	 * properites (for plug-ins) or modification of a DataTables core property.
 	 *  @name DataTable#stateSaveParams.dt
 	 *  @event
 	 *  @param {event} e jQuery event object

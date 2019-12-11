@@ -939,7 +939,7 @@ $.extend( FixedColumns.prototype , {
 	/**
 	 * Get information about the DataTable's scrolling state - specifically if the table is scrolling
 	 * on either the x or y axis, and also the scrollbar width.
-	 *  @returns {object} Information about the DataTables scrolling state with the properties:
+	 *  @returns {object} Information about the DataTables scrolling state with the properites:
 	 *    'x', 'y' and 'bar'
 	 *  @private
 	 */

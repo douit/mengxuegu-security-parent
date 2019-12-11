@@ -3021,13 +3021,13 @@
        * @method jQueryCSS
        *
        * [workaround] for old jQuery
-       * passing an array of style properties to .css()
+       * passing an array of style properites to .css()
        * will result in an object of property-value pairs.
        * (compability with version < 1.9)
        *
        * @private
        * @param  {jQuery} $obj
-       * @param  {Array} propertyNames - An array of one or more CSS properties.
+       * @param  {Array} propertyNames - An array of one or more CSS properites.
        * @return {Object}
        */
       Style.prototype.jQueryCSS = function ($obj, propertyNames) {
@@ -3116,7 +3116,7 @@
        * get current style on cursor
        *
        * @param {WrappedRange} rng
-       * @return {Object} - object contains style properties.
+       * @return {Object} - object contains style properites.
        */
       Style.prototype.current = function (rng) {
           var $cont = $$1(!dom.isElement(rng.sc) ? rng.sc.parentNode : rng.sc);

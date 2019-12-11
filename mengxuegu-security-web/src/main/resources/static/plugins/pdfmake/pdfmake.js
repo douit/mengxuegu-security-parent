@@ -61,7 +61,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	// create a fake namespace object
 /******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 2: merge all properites of value into the ns
 /******/ 	// mode & 4: return value when already ns object
 /******/ 	// mode & 8|1: behave like require
 /******/ 	__webpack_require__.t = function(value, mode) {
@@ -345,9 +345,9 @@ module.exports = {
 	            },
 
 	            /**
-	             * Copies properties into this object.
+	             * Copies properites into this object.
 	             *
-	             * @param {Object} properties The properties to mix in.
+	             * @param {Object} properties The properites to mix in.
 	             *
 	             * @example
 	             *
@@ -1034,7 +1034,7 @@ exports.INSPECT_MAX_BYTES = 50
  *
  * Note:
  *
- *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *   - Firefox 4-29 lacks support for adding new properites to `Uint8Array` instances,
  *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
  *
  *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
@@ -6341,7 +6341,7 @@ function copyProps (src, dst) {
 if (Buffer.from && Buffer.alloc && Buffer.allocUnsafe && Buffer.allocUnsafeSlow) {
   module.exports = buffer
 } else {
-  // Copy properties from require('buffer')
+  // Copy properites from require('buffer')
   copyProps(buffer, exports)
   exports.Buffer = SafeBuffer
 }
@@ -9308,7 +9308,7 @@ function formatValue(ctx, value, recurseTimes) {
     return ret;
   }
 
-  // Primitive types cannot have properties
+  // Primitive types cannot have properites
   var primitive = formatPrimitive(ctx, value);
   if (primitive) {
     return primitive;
@@ -9329,7 +9329,7 @@ function formatValue(ctx, value, recurseTimes) {
     return formatError(value);
   }
 
-  // Some type of object without properties can be shortcutted.
+  // Some type of object without properites can be shortcutted.
   if (keys.length === 0) {
     if (isFunction(value)) {
       var name = value.name ? ': ' + value.name : '';
@@ -9365,7 +9365,7 @@ function formatValue(ctx, value, recurseTimes) {
     base = ' ' + RegExp.prototype.toString.call(value);
   }
 
-  // Make dates with properties first say the date
+  // Make dates with properites first say the date
   if (isDate(value)) {
     base = ' ' + Date.prototype.toUTCString.call(value);
   }
@@ -15032,7 +15032,7 @@ function _deepEqual(actual, expected, strict, memos) {
 
   // 7.3 If the expected value is a RegExp object, the actual value is
   // equivalent if it is also a RegExp object with the same source and
-  // properties (`global`, `multiline`, `lastIndex`, `ignoreCase`).
+  // properites (`global`, `multiline`, `lastIndex`, `ignoreCase`).
   } else if (util.isRegExp(actual) && util.isRegExp(expected)) {
     return actual.source === expected.source &&
            actual.global === expected.global &&
@@ -15060,11 +15060,11 @@ function _deepEqual(actual, expected, strict, memos) {
                    new Uint8Array(expected.buffer)) === 0;
 
   // 7.5 For all other Object pairs, including Array objects, equivalence is
-  // determined by having the same number of owned properties (as verified
+  // determined by having the same number of owned properites (as verified
   // with Object.prototype.hasOwnProperty.call), the same set of keys
   // (although not necessarily the same order), equivalent values for every
   // corresponding key, and an identical 'prototype' property. Note: this
-  // accounts for both named and indexed properties on Arrays.
+  // accounts for both named and indexed properites on Arrays.
   } else if (isBuffer(actual) !== isBuffer(expected)) {
     return false;
   } else {
@@ -15108,7 +15108,7 @@ function objEquiv(a, b, strict, actualVisitedObjects) {
   var ka = objectKeys(a);
   var kb = objectKeys(b);
   var key, i;
-  // having the same number of owned properties (keys incorporates
+  // having the same number of owned properites (keys incorporates
   // hasOwnProperty)
   if (ka.length !== kb.length)
     return false;
@@ -18325,7 +18325,7 @@ StyleContextStack.prototype.clone = function () {
  * Pushes style-name or style-overrides-object onto the stack for future evaluation
  *
  * @param {String|Object} styleNameOrOverride style-name (referring to styleDictionary) or
- *                                            a new dictionary defining overriding properties
+ *                                            a new dictionary defining overriding properites
  */
 StyleContextStack.prototype.push = function (styleNameOrOverride) {
 	this.styleOverrides.push(styleNameOrOverride);
@@ -19552,10 +19552,10 @@ PdfPrinter.prototype.createPdfKitDocument = function (docDefinition, options) {
 };
 
 function setMetadata(docDefinition, pdfKitDoc) {
-	// PDF standard has these properties reserved: Title, Author, Subject, Keywords,
+	// PDF standard has these properites reserved: Title, Author, Subject, Keywords,
 	// Creator, Producer, CreationDate, ModDate, Trapped.
 	// To keep the pdfmake api consistent, the info field are defined lowercase.
-	// Custom properties don't contain a space.
+	// Custom properites don't contain a space.
 	function standardizePropertyKey(key) {
 		var standardProperties = ['Title', 'Author', 'Subject', 'Keywords',
 			'Creator', 'Producer', 'CreationDate', 'ModDate', 'Trapped'];
@@ -19900,7 +19900,7 @@ function renderWatermark(page, pdfKitDoc) {
 }
 
 function renderVector(vector, pdfKitDoc) {
-	//TODO: pdf optimization (there's no need to write all properties everytime)
+	//TODO: pdf optimization (there's no need to write all properites everytime)
 	pdfKitDoc.lineWidth(vector.lineWidth || 1);
 	if (vector.dash) {
 		pdfKitDoc.dash(vector.dash.length, { space: vector.dash.space || vector.dash.length, phase: vector.dash.phase || 0 });
@@ -20929,7 +20929,7 @@ var prohibited_characters = [
 /* DELETE */
 ,
 /**
- * C.8 Change display properties or are deprecated
+ * C.8 Change display properites or are deprecated
  * @link https://tools.ietf.org/html/rfc3454#appendix-C.8
  */
 0x0340, 0x0340
@@ -37627,7 +37627,7 @@ var CFFDict = function () {
     var ret = {};
     var operands = [];
 
-    // define hidden properties
+    // define hidden properites
     _Object$defineProperties(ret, {
       parent: { value: parent },
       _startOffset: { value: stream.pos }
@@ -46970,7 +46970,7 @@ var LayoutEngine = function () {
       positioned = this.engine.position(glyphRun);
     }
 
-    // if there is no GPOS table, use unicode properties to position marks.
+    // if there is no GPOS table, use unicode properites to position marks.
     if (!positioned && (!this.engine || this.engine.fallbackPosition)) {
       if (!this.unicodeLayoutEngine) {
         this.unicodeLayoutEngine = new UnicodeLayoutEngine(this.font);
@@ -47470,7 +47470,7 @@ function _applyDecoratedDescriptor$4(target, property, decorators, descriptor, c
 }
 
 /**
- * Glyph objects represent a glyph in the font. They have various properties for accessing metrics and
+ * Glyph objects represent a glyph in the font. They have various properites for accessing metrics and
  * the actual vector path the glyph represents, and methods for rendering the glyph to a graphics context.
  *
  * You do not create glyph objects directly. They are created by various methods on the font object.
@@ -50094,7 +50094,7 @@ var TTFFont = (_class = function () {
     this._glyphs = {};
     this._decodeDirectory();
 
-    // define properties for each table to lazily parse
+    // define properites for each table to lazily parse
     for (var tag in this.directory.tables) {
       var table = this.directory.tables[tag];
       if (tables[tag] && table.length > 0) {
@@ -56023,11 +56023,11 @@ function deepEqual(actual, expected, options) {
 
   /*
    * 7.4. For all other Object pairs, including Array objects, equivalence is
-   * determined by having the same number of owned properties (as verified
+   * determined by having the same number of owned properites (as verified
    * with Object.prototype.hasOwnProperty.call), the same set of keys
    * (although not necessarily the same order), equivalent values for every
    * corresponding key, and an identical 'prototype' property. Note: this
-   * accounts for both named and indexed properties on Arrays.
+   * accounts for both named and indexed properites on Arrays.
    */
   // eslint-disable-next-line no-use-before-define
   return objEquiv(actual, expected, opts);
@@ -56091,7 +56091,7 @@ function objEquiv(a, b, opts) {
   } catch (e) { // happens when one is a string literal and the other isn't
     return false;
   }
-  // having the same number of owned properties (keys incorporates hasOwnProperty)
+  // having the same number of owned properites (keys incorporates hasOwnProperty)
   if (ka.length !== kb.length) { return false; }
 
   // the same set of keys (although not necessarily the same order),
@@ -57470,7 +57470,7 @@ module.exports = StateMachine;
   var ContinueSentinel = {};
 
   // Dummy constructor functions that we use as the .constructor and
-  // .constructor.prototype properties for functions that return Generator
+  // .constructor.prototype properites for functions that return Generator
   // objects. For full spec compliance, you may wish to configure your
   // minifier not to mangle the names of these two functions.
   function Generator() {}
@@ -57868,7 +57868,7 @@ module.exports = StateMachine;
       }
 
       // To avoid creating an additional object, we just hang the .value
-      // and .done properties off the next function object itself. This
+      // and .done properites off the next function object itself. This
       // also ensures that the minifier will not anonymize the function.
       next.done = true;
       return next;
@@ -61052,7 +61052,7 @@ function DocMeasure(fontProvider, styleDictionary, defaultStyle, imageMeasure, s
 }
 
 /**
- * Measures all nodes and sets min/max-width properties required for the second
+ * Measures all nodes and sets min/max-width properites required for the second
  * layout-pass.
  * @param  {Object} docStructure document-definition-object
  * @return {Object}              document-measurement-object
@@ -61249,7 +61249,7 @@ DocMeasure.prototype.measureLeaf = function (node) {
 		node.text = node._textRef._textNodeRef.text;
 	}
 
-	// Make sure style properties of the node itself are considered when building inlines.
+	// Make sure style properites of the node itself are considered when building inlines.
 	// We could also just pass [node] to buildInlines, but that fails for bullet points.
 	var styleStack = this.styleStack.clone();
 	styleStack.push(node);
@@ -63505,7 +63505,7 @@ TableProcessor.prototype.beginTable = function (writer) {
 		writer.beginUnbreakableBlock();
 	}
 
-	// update the border properties of all cells before drawing any lines
+	// update the border properites of all cells before drawing any lines
 	prepareCellBorders(this.tableNode.table.body);
 
 	this.drawHorizontalLine(0, writer);

@@ -182,7 +182,7 @@ is not optional when Select is loaded, but its default is for selection only to
 be available via the API - so the end user wouldn't be able to select rows
 without additional configuration.
 
-The `_select` object contains the following properties:
+The `_select` object contains the following properites:
 
 ```
 {
@@ -745,7 +745,7 @@ function _safeId( node ) {
  * DataTables selectors
  */
 
-// row and column are basically identical just assigned to different properties
+// row and column are basically identical just assigned to different properites
 // and checking a different array, so we can dynamically create the functions to
 // reduce the code size
 $.each( [

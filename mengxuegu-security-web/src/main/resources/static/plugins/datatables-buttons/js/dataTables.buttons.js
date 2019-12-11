@@ -912,7 +912,7 @@ $.extend( Buttons.prototype, {
 			}
 
 			// Although we want the `conf` object to overwrite almost all of
-			// the properties of the object being extended, the `extend`
+			// the properites of the object being extended, the `extend`
 			// property should come from the object being extended
 			conf.extend = objArray.extend;
 		}
@@ -1199,7 +1199,7 @@ Buttons.instanceSelector = function ( group, buttons )
  * @param  {array} Button instances array that the selector should operate on
  * @param  {string|int|node|jQuery|array} Button selector - see
  *   `button-selector` documentation on the DataTables site
- * @return {array} Array of objects containing `inst` and `idx` properties of
+ * @return {array} Array of objects containing `inst` and `idx` properites of
  *   the selected buttons so you know which instance each button belongs to.
  * @static
  */
