@@ -3,4 +3,16 @@ server:
 
 spring:
   thymeleaf:
-    cache: true #关闭缓存
+    cache: false #关闭缓存
+
+mengxuegu:
+  security:
+    authentication:
+      loginPage: /login/page # 响应认证(登录)页面url
+      loginProcessingUrl: /login/form # 登录表单提交处理url
+      usernameParameter: name # 对应表单中input标签中name属性的值 默认是username
+      passwordParameter: pwd # 对应表单中input标签中name属性的值 默认的是password
+      staticPaths: # 静态资源 "/dist/**", "/modules/**", "/plugins/**"
+      - /dist/**
+      - /modules/**
+      - /plugins/**
