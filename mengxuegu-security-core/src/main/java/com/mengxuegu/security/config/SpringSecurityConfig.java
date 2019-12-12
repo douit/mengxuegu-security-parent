@@ -14,6 +14,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 
 @Configuration
@@ -64,6 +66,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
      * @param http
      * @throws Exception
      */
+    @Autowired
+    private AuthenticationSuccessHandler customAuthenticationSuccessHandler;
+    @Autowired
+    private AuthenticationFailureHandler customAuthenticationFailureHandler;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 //        http.httpBasic()//采用 httpBasic 认证
@@ -72,6 +79,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginProcessingUrl(securityProperties.getAuthentication().getLoginProcessingUrl())//登录表单提交处理url
                 .usernameParameter(securityProperties.getAuthentication().getUsernameParameter()) //对应表单中input标签中name属性的值 默认是username
                 .passwordParameter(securityProperties.getAuthentication().getPasswordParameter()) //对应表单中input标签中name属性的值 默认的是password
+                .successHandler(customAuthenticationSuccessHandler) //设置自定义认证成功处理器
+                .failureHandler(customAuthenticationFailureHandler) //设置自定义认证失败处理器
                 .and()
                 .authorizeRequests()//认证请求
                 .antMatchers(securityProperties.getAuthentication().getLoginPage()).permitAll() //放行/login/page请求不需要认证就可以访问

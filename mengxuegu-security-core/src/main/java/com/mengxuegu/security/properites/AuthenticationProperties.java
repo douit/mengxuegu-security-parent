@@ -8,9 +8,21 @@ public class AuthenticationProperties {
     private String usernameParameter = "name";
     private String passwordParameter = "pwd";
     private String[] staticPaths = {"/dist/**", "/modules/**", "/plugins/**"};
+    /**
+     * 认证响应的类型：JSON 、REDIRECT 重定向
+     */
+    private LoginResponseType loginType = LoginResponseType.REDIRECT;
 
     public String getLoginPage() {
         return loginPage;
+    }
+
+    public LoginResponseType getLoginType() {
+        return loginType;
+    }
+
+    public void setLoginType(LoginResponseType loginType) {
+        this.loginType = loginType;
     }
 
     public void setLoginPage(String loginPage) {
