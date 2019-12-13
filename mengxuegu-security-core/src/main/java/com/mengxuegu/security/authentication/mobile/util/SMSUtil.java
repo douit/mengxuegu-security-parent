@@ -13,7 +13,7 @@ public class SMSUtil {
     //对应你阿里云账户的 accessKeyId
     private static final String accessKeyId = "LTAI4FuskWi1nk9WaWo9Hbt4";
     //对应你阿里云账户的 accessKeySecret
-    private static final String accessKeySecret = "ffMdwutNCXXGoKJkwIEj3n2TXLUVcM";
+    private static final String accessKeySecret = "";
     //对应签名名称
     private static final String signName = "";
     //对应模板代码
