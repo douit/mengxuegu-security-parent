@@ -18,7 +18,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.web.filter.OncePerRequestFilter;
+
+import javax.sql.DataSource;
 
 
 @Configuration
@@ -61,6 +64,30 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(cutomUserDetailsService);
     }
 
+
+    @Autowired
+    private AuthenticationSuccessHandler customAuthenticationSuccessHandler;
+    @Autowired
+    private AuthenticationFailureHandler customAuthenticationFailureHandler;
+    @Autowired
+    private ImageCodeValidateFilter imageCodeValidateFilter;
+    @Autowired
+    DataSource dataSource;
+
+    /**
+     * 记住我功能
+     *
+     * @return
+     */
+    @Bean
+    public JdbcTokenRepositoryImpl jdbcTokenRepository() {
+        JdbcTokenRepositoryImpl jdbcTokenRepository = new JdbcTokenRepositoryImpl();
+        jdbcTokenRepository.setDataSource(dataSource);
+        //是否启动项目时自动创建表 true自动创建
+//        jdbcTokenRepository.setCreateTableOnStartup(true);
+        return jdbcTokenRepository;
+    }
+
     /**
      * 当你认证成功后，springsecurity它会重定向到你上一次请求
      * 资源权限配置
@@ -69,13 +96,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
      * @param http
      * @throws Exception
      */
-    @Autowired
-    private AuthenticationSuccessHandler customAuthenticationSuccessHandler;
-    @Autowired
-    private AuthenticationFailureHandler customAuthenticationFailureHandler;
-    @Autowired
-    private ImageCodeValidateFilter imageCodeValidateFilter;
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 //        http.httpBasic()//采用 httpBasic 认证
@@ -90,8 +110,12 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()//认证请求
                 .antMatchers(securityProperties.getAuthentication().getLoginPage(),
-                        "/code/image").permitAll() //放行/login/page请求不需要认证就可以访问
+                        "/code/image", "/mobile/page","/code/mobile").permitAll() //放行/login/page请求不需要认证就可以访问
                 .anyRequest().authenticated()//所有访问该应用的http请求都有通过身份认证才可以访问
+                .and()
+                .rememberMe()//记住我功能配置
+                .tokenRepository(jdbcTokenRepository())//保存登录信息
+                .tokenValiditySeconds(60 * 60 * 24 * 7)//记住我有效时长
         ;
     }
 

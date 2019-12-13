@@ -1,4 +1,4 @@
-package com.mengxuegu.security.authentication.code;
+package com.mengxuegu.security.exception;
 
 import org.springframework.security.core.AuthenticationException;
 

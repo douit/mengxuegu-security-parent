@@ -4,6 +4,13 @@ server:
 spring:
   thymeleaf:
     cache: false #关闭缓存
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/study-security?serverTimezone=GMT%2B8&useUnicode=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
 
 mengxuegu:
   security:
@@ -13,7 +20,8 @@ mengxuegu:
       usernameParameter: name # 对应表单中input标签中name属性的值 默认是username
       passwordParameter: pwd # 对应表单中input标签中name属性的值 默认的是password
       staticPaths: # 静态资源 "/dist/**", "/modules/**", "/plugins/**"
-      - /dist/**
-      - /modules/**
-      - /plugins/**
-      loginType: JSON #认证后响应的类型（响应类型有:JSON/REDIRECT）
+        - /dist/**
+        - /modules/**
+        - /plugins/**
+      loginType: REDIRECT #认证后响应的类型（响应类型有:JSON/REDIRECT）
+

@@ -1,9 +1,8 @@
-package com.mengxuegu.security.authentication.code;
+package com.mengxuegu.security.authentication.mobile;
 
 import com.mengxuegu.security.authentication.CustomAuthenticationFailureHandler;
-import com.mengxuegu.security.controller.CustomLoginController;
+import com.mengxuegu.security.controller.MobileLoginController;
 import com.mengxuegu.security.exception.ValidateCodeException;
-import com.mengxuegu.security.properites.SecurityProperties;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.AuthenticationException;
@@ -17,21 +16,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * OncePerRequestFilter所有请求之前被调用一次
+ * 校验用户输入的手机验证码是否正确
  */
-@Component("imageCodeValidateFilter")
-public class ImageCodeValidateFilter extends OncePerRequestFilter {
-    @Autowired
-    private SecurityProperties securityProperties;
+@Component
+public class MobileValiddateFilter extends OncePerRequestFilter {
     @Autowired
     private CustomAuthenticationFailureHandler customAuthenticationFailureHandler;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response
-            , FilterChain filterChain) throws ServletException, IOException {
-        //1. 如果是post方式的登录请求，则校验输入验证是否正确
-        if (securityProperties.getAuthentication().getLoginProcessingUrl()
-                .equals(request.getRequestURI()) && request.getMethod().equalsIgnoreCase("post")) {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        //1.判断请求是否为手机登录，且post请求
+        if ("/mobile/form".equals(request.getRequestURI()) && "post".equalsIgnoreCase(request.getMethod())) {
             try {
                 //校验验证码合法性
                 validate(request);
@@ -41,13 +36,13 @@ public class ImageCodeValidateFilter extends OncePerRequestFilter {
                 return;
             }
         }
-        //放行请求
+        //放行
         filterChain.doFilter(request, response);
     }
 
     private void validate(HttpServletRequest request) {
         //现获取session中的验证码
-        String sessionCode = (String) request.getSession().getAttribute(CustomLoginController.SESSION_KEY);
+        String sessionCode = (String) request.getSession().getAttribute(MobileLoginController.SESSION_KEY);
         //获取用户输入的验证码
         String inputCode = request.getParameter("code");
         //判断是否正确
