@@ -13,12 +13,12 @@ public class SMSUtil {
     //对应你阿里云账户的 accessKeyId
     private static final String accessKeyId = "LTAI4FuskWi1nk9WaWo9Hbt4";
     //对应你阿里云账户的 accessKeySecret
-    private static final String accessKeySecret = "";
+    private static final String accessKeySecret = "ffMdwutNCXXGoKJkwIEj3n2TXLUVcM";
     //对应签名名称
-    private static final String signName = "";
+    private static final String signName = "实惠商城";
     //对应模板代码
-    private static final String templateCode = "";
-
+    private static final String templateCode = "SMS_180049905";
+    //对应验证码
     private static int mobile_code = (int) ((Math.random() * 9 + 1) * 100000);
 
     /**
@@ -45,6 +45,7 @@ public class SMSUtil {
         request.putQueryParameter("SignName", signName);
         request.putQueryParameter("TemplateCode", templateCode);
         request.putQueryParameter("TemplateParam", "{\"code\":" + mobile_code + "}");
+        System.out.println(mobile_code);
         try {
             CommonResponse response = client.getCommonResponse(request);
             System.out.println(response.getData());

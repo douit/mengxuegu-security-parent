@@ -1,5 +1,6 @@
 package com.mengxuegu.security.authentication.mobile;
 
+import com.mengxuegu.security.authentication.mobile.util.SMSUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,8 +18,10 @@ public class SmsCodeSender implements SmsSend {
      */
     @Override
     public boolean sendSms(String moile, String content) {
-        String sendContent = String.format("梦学谷，验证码%s,请勿泄露给别人。",content);
+        String sendContent = String.format("梦学谷，验证码%s,请勿泄露给别人。", content);
+        System.out.println(moile);
         //调用第三方的发送功能的SDK
+        SMSUtil.SendCode(moile);
         logger.info("向手机号" + moile + "发送的短信为" + sendContent);
         return true;
     }

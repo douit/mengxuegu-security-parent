@@ -1,6 +1,5 @@
 package com.mengxuegu.security.authentication.mobile;
 
-import com.mengxuegu.security.config.MobileauthenticationToken;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.core.Authentication;
