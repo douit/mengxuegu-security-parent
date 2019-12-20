@@ -23,4 +23,8 @@ mengxuegu:
         - /modules/**
         - /plugins/**
       loginType: REDIRECT #认证后响应的类型（响应类型有:JSON/REDIRECT）
-
+      #"/code/image", "/mobile/page", "/code/mobile"
+      imageCodeUrl: /code/image #获取图形验证码地址
+      mobileCodeUrl: /code/mobile #发送手机验证码地址
+      mobilePage: /mobile/page  #前往手机登录页面
+      tokenValiditySeconds: 604800 #记住我功能有效时长

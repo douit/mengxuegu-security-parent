@@ -118,8 +118,12 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .failureHandler(customAuthenticationFailureHandler) //设置自定义认证失败处理器
                 .and()
                 .authorizeRequests()//认证请求
-                .antMatchers(securityProperties.getAuthentication().getLoginPage(),
-                        "/code/image", "/mobile/page", "/code/mobile").permitAll() //放行/login/page请求不需要认证就可以访问
+                .antMatchers(securityProperties.getAuthentication().getLoginPage(), //登录页面
+//                        "/code/image", "/mobile/page", "/code/mobile"
+                        securityProperties.getAuthentication().getImageCodeUrl(),// 图形验证码地址
+                        securityProperties.getAuthentication().getMobilePage(), // 手机登录页面
+                        securityProperties.getAuthentication().getMobileCodeUrl()// 发送手机验证码地址
+                ).permitAll() //放行/login/page请求不需要认证就可以访问
                 .anyRequest().authenticated()//所有访问该应用的http请求都有通过身份认证才可以访问
                 .and()
                 .rememberMe()//记住我功能配置

@@ -31,7 +31,7 @@ public class CutomUserDetailsService implements UserDetailsService {
         //2.查询该用户有哪些权限
         //3.封装用户信息和权限信息
         return new User(username, password,
-                AuthorityUtils.commaSeparatedStringToAuthorityList("ADMIN")//传入权限
+                AuthorityUtils.commaSeparatedStringToAuthorityList("ADMIN,DELETE")//传入权限
         );
     }
 }
