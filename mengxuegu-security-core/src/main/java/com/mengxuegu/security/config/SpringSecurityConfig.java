@@ -1,6 +1,8 @@
 package com.mengxuegu.security.config;
 
 import com.mengxuegu.security.authentication.code.ImageCodeValidateFilter;
+import com.mengxuegu.security.authentication.mobile.MobileAuthenticationConfig;
+import com.mengxuegu.security.authentication.mobile.MobileValiddateFilter;
 import com.mengxuegu.security.properites.SecurityProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -73,6 +75,12 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     private ImageCodeValidateFilter imageCodeValidateFilter;
     @Autowired
     DataSource dataSource;
+    //校验手机验证码
+    @Autowired
+    private MobileValiddateFilter mobileValiddateFilter;
+    // 校验手机号是否存在，就是手机号认证
+    @Autowired
+    private MobileAuthenticationConfig mobileAuthenticationConfig;
 
     /**
      * 记住我功能
@@ -99,7 +107,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 //        http.httpBasic()//采用 httpBasic 认证
-        http.addFilterBefore(imageCodeValidateFilter, UsernamePasswordAuthenticationFilter.class)//用户先通过imageCodeValidateFilter过滤器，在通过UsernamePasswordAuthenticationFilter过滤器
+        //
+        http.addFilterBefore(mobileValiddateFilter, UsernamePasswordAuthenticationFilter.class)//用户先通过手机验证mobileValiddateFilter过滤器，在通过UsernamePasswordAuthenticationFilter过滤器
+                .addFilterBefore(imageCodeValidateFilter, UsernamePasswordAuthenticationFilter.class)//用户先通过imageCodeValidateFilter过滤器，在通过UsernamePasswordAuthenticationFilter过滤器
                 .formLogin()//表单登录方式
                 .loginPage(securityProperties.getAuthentication().getLoginPage())
                 .loginProcessingUrl(securityProperties.getAuthentication().getLoginProcessingUrl())//登录表单提交处理url
@@ -110,13 +120,15 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()//认证请求
                 .antMatchers(securityProperties.getAuthentication().getLoginPage(),
-                        "/code/image", "/mobile/page","/code/mobile").permitAll() //放行/login/page请求不需要认证就可以访问
+                        "/code/image", "/mobile/page", "/code/mobile").permitAll() //放行/login/page请求不需要认证就可以访问
                 .anyRequest().authenticated()//所有访问该应用的http请求都有通过身份认证才可以访问
                 .and()
                 .rememberMe()//记住我功能配置
                 .tokenRepository(jdbcTokenRepository())//保存登录信息
                 .tokenValiditySeconds(60 * 60 * 24 * 7)//记住我有效时长
         ;
+        //将手机认证添加到过滤器链上
+        http.apply(mobileAuthenticationConfig);
     }
 
     /**

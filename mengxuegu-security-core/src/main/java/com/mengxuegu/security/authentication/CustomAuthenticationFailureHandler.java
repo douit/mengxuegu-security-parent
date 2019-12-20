@@ -3,6 +3,7 @@ package com.mengxuegu.security.authentication;
 import com.mengxuegu.base.result.MengxueguResult;
 import com.mengxuegu.security.properites.LoginResponseType;
 import com.mengxuegu.security.properites.SecurityProperties;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
@@ -38,7 +39,13 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
             response.getWriter().write(jsonString);
         } else {
             //设置失败时候默认访问的地址
-            super.setDefaultFailureUrl(securityProperties.getAuthentication().getLoginPage() + "?error");
+//            super.setDefaultFailureUrl(securityProperties.getAuthentication().getLoginPage() + "?error");
+            //获取上一次请求路径
+            String referer = request.getHeader("Referer");
+            logger.info("referer:" + referer);
+            String lastUrl = StringUtils.substringBefore(referer, "?");
+            logger.info("上一次请求路径:" + lastUrl);
+            super.setDefaultFailureUrl(lastUrl + "?error");
             //重定向回认证页面
             super.onAuthenticationFailure(request, response, e);
         }

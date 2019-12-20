@@ -19,14 +19,14 @@ public class SMSUtil {
     //对应模板代码
     private static final String templateCode = "SMS_180049905";
     //对应验证码
-    private static int mobile_code = (int) ((Math.random() * 9 + 1) * 100000);
+//    private static int mobile_code = (int) ((Math.random() * 9 + 1) * 100000);
 
     /**
      * 短信发送
-     *
      * @param telphone 发送的手机号
+     * @param mobileCode 验证码
      */
-    public static void SendCode(String telphone) {
+    public static void SendCode(String telphone,int mobileCode) {
 
         DefaultProfile profile = DefaultProfile.getProfile("default",
                 accessKeyId, accessKeySecret);
@@ -44,8 +44,7 @@ public class SMSUtil {
         request.putQueryParameter("PhoneNumbers", telphone);
         request.putQueryParameter("SignName", signName);
         request.putQueryParameter("TemplateCode", templateCode);
-        request.putQueryParameter("TemplateParam", "{\"code\":" + mobile_code + "}");
-        System.out.println(mobile_code);
+        request.putQueryParameter("TemplateParam", "{\"code\":" + mobileCode + "}");
         try {
             CommonResponse response = client.getCommonResponse(request);
             System.out.println(response.getData());

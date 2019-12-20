@@ -7,10 +7,12 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
 
 /**
  * 通过手机号获取用户信息和权限资源
  */
+@Component("mobileUserDetailsService")
 public class MobileUserDetailsService implements UserDetailsService {
     Logger logger = LoggerFactory.getLogger(getClass());
 
