@@ -22,7 +22,7 @@ public class MobileUserDetailsService implements UserDetailsService {
         //1.通过手机号查询用户信息
         //2.如果有用户信息，则再获取权限资源
         //3.封装用户信息
-        return new User(mobile, "", true, true, true, true,
+        return new User("meng", "", true, true, true, true,
                 AuthorityUtils.commaSeparatedStringToAuthorityList("admin"));
 
     }

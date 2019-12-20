@@ -106,8 +106,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        http.httpBasic()//采用 httpBasic 认证
-        //
+        // http.httpBasic()//采用 httpBasic 认证
         http.addFilterBefore(mobileValiddateFilter, UsernamePasswordAuthenticationFilter.class)//用户先通过手机验证mobileValiddateFilter过滤器，在通过UsernamePasswordAuthenticationFilter过滤器
                 .addFilterBefore(imageCodeValidateFilter, UsernamePasswordAuthenticationFilter.class)//用户先通过imageCodeValidateFilter过滤器，在通过UsernamePasswordAuthenticationFilter过滤器
                 .formLogin()//表单登录方式
