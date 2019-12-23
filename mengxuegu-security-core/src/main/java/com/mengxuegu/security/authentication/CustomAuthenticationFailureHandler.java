@@ -25,6 +25,8 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
     SecurityProperties securityProperties;
 
     /**
+     * 认证失败会调用的方法
+     *
      * @param e 认证失败时候的异常
      * @throws IOException
      * @throws ServletException
@@ -39,11 +41,15 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
             response.getWriter().write(jsonString);
         } else {
             //设置失败时候默认访问的地址
-//            super.setDefaultFailureUrl(securityProperties.getAuthentication().getLoginPage() + "?error");
+            //super.setDefaultFailureUrl(securityProperties.getAuthentication().getLoginPage() + "?error");
             //获取上一次请求路径
             String referer = request.getHeader("Referer");
             logger.info("referer:" + referer);
-            String lastUrl = StringUtils.substringBefore(referer, "?");
+            Object toAuthentication = request.getAttribute("toAuthentication");
+            //如果下面有值，则认为是多端登录，直接返回一个登录地址
+            String lastUrl = toAuthentication != null ? securityProperties.getAuthentication().getLoginPage()
+                    : StringUtils.substringBefore(referer, "?");
+            // String lastUrl = StringUtils.substringBefore(referer, "?");
             logger.info("上一次请求路径:" + lastUrl);
             super.setDefaultFailureUrl(lastUrl + "?error");
             //重定向回认证页面

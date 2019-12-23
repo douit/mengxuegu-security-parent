@@ -3,10 +3,11 @@ package com.mengxuegu.security.config;
 import com.mengxuegu.security.authentication.mobile.SmsCodeSender;
 import com.mengxuegu.security.authentication.mobile.SmsSend;
 import com.mengxuegu.security.authentication.session.CustomInvalidSessionStrategy;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import com.mengxuegu.security.authentication.session.CustomSessionInformationExpiredStrategy;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.web.session.InvalidSessionStrategy;
+import org.springframework.security.web.session.SessionInformationExpiredStrategy;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,6 +15,17 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class SpringSecurityConfigBean {
+    /**
+     * 当同一用户的session达到指定数量时，会执行该类
+     *
+     * @return
+     */
+    @Bean
+    @ConditionalOnMissingBean(SessionInformationExpiredStrategy.class)
+    public SessionInformationExpiredStrategy sessionInformationExpiredStrategy() {
+        return new CustomSessionInformationExpiredStrategy();
+    }
+
     /**
      * 当session失效后的处理类
      *

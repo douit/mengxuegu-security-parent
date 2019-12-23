@@ -37,7 +37,8 @@
                 <a href="#" class="dropdown-item">
                     <!-- Message Start -->
                     <div class="media">
-                        <img th:src="@{/dist/img/user1-128x128.jpg}" src="../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                        <img th:src="@{/dist/img/user1-128x128.jpg}" src="../dist/img/user1-128x128.jpg"
+                             alt="User Avatar" class="img-size-50 mr-3 img-circle">
                         <div class="media-body">
                             <h3 class="dropdown-item-title">
                                 Brad Diesel
@@ -53,7 +54,8 @@
                 <a href="#" class="dropdown-item">
                     <!-- Message Start -->
                     <div class="media">
-                        <img th:src="@{/dist/img/user8-128x128.jpg}" src="../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                        <img th:src="@{/dist/img/user8-128x128.jpg}" src="../dist/img/user8-128x128.jpg"
+                             alt="User Avatar" class="img-size-50 img-circle mr-3">
                         <div class="media-body">
                             <h3 class="dropdown-item-title">
                                 John Pierce
@@ -69,7 +71,8 @@
                 <a href="#" class="dropdown-item">
                     <!-- Message Start -->
                     <div class="media">
-                        <img th:src="@{/dist/img/user3-128x128.jpg}" src="../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                        <img th:src="@{/dist/img/user3-128x128.jpg}" src="../dist/img/user3-128x128.jpg"
+                             alt="User Avatar" class="img-size-50 img-circle mr-3">
                         <div class="media-body">
                             <h3 class="dropdown-item-title">
                                 Nora Silvester
@@ -115,18 +118,20 @@
 
         <!-- 个人中心下拉菜单 -->
         <li class="nav-item dropdown user user-menu">
-            <a class="nav-link" data-toggle="dropdown"  href="#">
-                <img th:src="@{/dist/img/user2-160x160.jpg}" src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+                <img th:src="@{/dist/img/user2-160x160.jpg}" src="../dist/img/user2-160x160.jpg" class="user-image"
+                     alt="User Image">
             </a>
             <!-- -->
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-sm-right"
                  style="border-top-width: 1px; min-width: 150px; width: 100%;">
-                <a href="#" class="dropdown-item" >
+                <a th:href="@{/logout}" href="#" class="dropdown-item">
                     <i class="fa fa-key mr-2"></i> 修改密码
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="login.html" class="dropdown-item" >
-                    <i class="fa fa-sign-out mr-2"></i> 退出系统
+                <!--                <a th:href="@{/logout}" class="dropdown-item">-->
+                <a th:href="@{/logout}" href="http://localhost/logout" class="dropdown-item">
+                    <i class="fa fa-sign-out mr-2"></i> 退出系统xxx
                 </a>
             </div>
         </li>

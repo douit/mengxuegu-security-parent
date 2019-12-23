@@ -22,7 +22,7 @@ public class MainController {
         if (principal != null && principal instanceof UserDetails) {
             UserDetails userDetails = (UserDetails) principal;
             Collection<? extends GrantedAuthority> authorities = userDetails.getAuthorities();
-            System.out.println(authorities);
+            System.out.println("username" + authorities);
             String username = userDetails.getUsername();
             map.put("username", username);
         }
