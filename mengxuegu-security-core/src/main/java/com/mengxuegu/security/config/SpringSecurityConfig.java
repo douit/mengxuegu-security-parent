@@ -150,6 +150,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().and()
                 .logout()
                 .addLogoutHandler(customLogoutHandler)//退出清除缓存
+                .logoutUrl("/user/logout")  //退出请求路径
+                .logoutSuccessUrl("/mobile/page") //退出成功后跳转的地址
+                .deleteCookies("JSESSIONID") //退出后删除指定的cookie值
         ;
         //将手机认证添加到过滤器链上
         http.apply(mobileAuthenticationConfig);
