@@ -21,6 +21,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
+import org.springframework.security.web.session.InvalidSessionStrategy;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.sql.DataSource;
@@ -81,6 +82,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     // 校验手机号是否存在，就是手机号认证
     @Autowired
     private MobileAuthenticationConfig mobileAuthenticationConfig;
+    @Autowired
+    private InvalidSessionStrategy invalidSessionStrategy;
 
     /**
      * 记住我功能
@@ -129,6 +132,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .rememberMe()//记住我功能配置
                 .tokenRepository(jdbcTokenRepository())//保存登录信息
                 .tokenValiditySeconds(60 * 60 * 24 * 7)//记住我有效时长
+                .and()
+                .sessionManagement()//session管理
+                .invalidSessionStrategy(invalidSessionStrategy)//当session失效的处理类
         ;
         //将手机认证添加到过滤器链上
         http.apply(mobileAuthenticationConfig);
