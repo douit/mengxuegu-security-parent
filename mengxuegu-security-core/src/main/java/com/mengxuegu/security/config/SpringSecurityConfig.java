@@ -86,9 +86,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     // 校验手机号是否存在，就是手机号认证
     @Autowired
     private MobileAuthenticationConfig mobileAuthenticationConfig;
+
     // 当session失效后处理的类
     @Autowired
     private InvalidSessionStrategy invalidSessionStrategy;
+
     //当同一个用户session数量超过指定值之后，会调用这个实现类
     @Autowired
     private SessionInformationExpiredStrategy sessionInformationExpiredStrategy;
@@ -145,7 +147,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .invalidSessionStrategy(invalidSessionStrategy)//当session失效的处理类
                 .maximumSessions(1)// 每个用户在系统中最多可以有多少个session
                 .expiredSessionStrategy(sessionInformationExpiredStrategy) //超过最大数，执行这个实现类
-                .maxSessionsPreventsLogin(true)// 当一个用户达到了最大session数，则不允许后面在进行登录了
+                .maxSessionsPreventsLogin(false)// 当一个用户达到了最大session数，则不允许后面在进行登录了
                 .sessionRegistry(sessionRegistry())
                 .and().and()
                 .logout()

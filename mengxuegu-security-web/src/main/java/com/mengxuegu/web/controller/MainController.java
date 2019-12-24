@@ -9,21 +9,24 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Collection;
 import java.util.Map;
 
 @Controller
 public class MainController {
     @RequestMapping({"index", "/", ""})
-    public String index(Map<String, Object> map) {
+    public String index(Map<String, Object> map, HttpServletRequest request) {
         //获取用户认证信息
         //第一种方式:
+        //通过 SecurityContextHolder 类获取 getContext 上下文，getAuthentication 获取当前用户认证信息 , getPrincipal 获取 UserDetails 。
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal != null && principal instanceof UserDetails) {
             UserDetails userDetails = (UserDetails) principal;
             Collection<? extends GrantedAuthority> authorities = userDetails.getAuthorities();
             System.out.println("username" + authorities);
             String username = userDetails.getUsername();
+            request.setAttribute("username", username);
             map.put("username", username);
         }
         return "index";//resources/tempates/index

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ceafd93-07ae-48a3-a92d-af67994754b0" name="Default Changelist" comment="">
+    <list default="true" id="7ceafd93-07ae-48a3-a92d-af67994754b0" name="Default Changelist" comment="spring-security项目-公司">
+      <change afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/CustomAuthenticationFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomInvalidSessionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomInvalidSessionStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomLogoutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomLogoutHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login-mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login-mobile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,73 +32,104 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="135">
+              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomInvalidSessionStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomLogoutHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="21" column="5" lean-forward="true" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="154" column="62" selection-start-line="154" selection-start-column="62" selection-end-line="154" selection-end-column="62" />
+            <state relative-caret-position="243">
+              <caret line="156" column="62" lean-forward="true" selection-start-line="156" selection-start-column="62" selection-end-line="156" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/head.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-sidebar.html">
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+            <state relative-caret-position="432">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/control-sidebar.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-header.html">
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="132" column="30" lean-forward="true" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="42" />
+            <state relative-caret-position="432">
+              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-footer.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login-mobile.html">
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/CustomAuthenticationFailureHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+            <state relative-caret-position="535">
+              <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomSessionInformationExpiredStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
-              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="252">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -135,7 +169,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/controller/CustomLoginController.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properties/SecurityProperties.java" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-web/pom.xml" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/SecurityProperties.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/SmsSend.java" />
@@ -150,22 +183,24 @@
         <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/security/MobileUserDetailsService.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/util/SMSUtil.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/security/CutomUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/controller/MainController.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/AuthenticationProperties.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfigBean.java" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomInvalidSessionStrategy.java" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/CustomAuthenticationFailureHandler.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/messages_zh_CN.properties" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/ReloadMessageConfig.java" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationConfig.java" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomSessionInformationExpiredStrategy.java" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-core/pom.xml" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomLogoutHandler.java" />
-        <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-sidebar.html" />
         <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-header.html" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/CustomAuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationConfig.java" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-web/pom.xml" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-core/pom.xml" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomLogoutHandler.java" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomInvalidSessionStrategy.java" />
       </list>
     </option>
   </component>
@@ -176,8 +211,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="398" />
-    <option name="y" value="100" />
+    <option name="x" value="-76" />
+    <option name="y" value="5" />
     <option name="width" value="1413" />
     <option name="height" value="998" />
   </component>
@@ -273,6 +308,19 @@
               <item name="mengxuegu" type="462c0819:PsiDirectoryNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
               <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu-security-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
               <item name="session" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,102 +350,21 @@
             <path>
               <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mengxuegu-security-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="mengxuegu" type="462c0819:PsiDirectoryNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mengxuegu-security-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mengxuegu-security-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mengxuegu-security-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="properites" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,7 +376,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="F:/CGB-DB-SYS-V2.02" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -487,7 +454,9 @@
       <workItem from="1576508486212" duration="664000" />
       <workItem from="1576587815296" duration="92000" />
       <workItem from="1576851439277" duration="3383000" />
-      <workItem from="1577082070965" duration="12794000" />
+      <workItem from="1577082070965" duration="14129000" />
+      <workItem from="1577149675360" duration="87000" />
+      <workItem from="1577151933929" duration="18266000" />
     </task>
     <task id="LOCAL-00001" summary="创建spring-security项目">
       <created>1575856403549</created>
@@ -538,17 +507,24 @@
       <option name="project" value="LOCAL" />
       <updated>1577092472844</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="spring-security项目-公司">
+      <created>1577095141364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577095141364</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55616000" />
+    <option name="totallyTimeSpent" value="75304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2585288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -558,7 +534,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3575298" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.4225352" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4042793" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -567,7 +543,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.38244852" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.03468208" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.08342362" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.117717005" />
@@ -595,87 +571,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="spring-security项目-公司" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.0.RELEASE/spring-security-web-5.2.0.RELEASE-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2997">
-          <caret line="140" column="34" selection-start-line="140" selection-start-column="34" selection-end-line="140" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java" />
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/util/SMSUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE-sources.jar!/org/springframework/security/core/authority/AuthorityUtils.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java" />
-    <entry file="jar://D:/jdk1.8.0_151/src.zip!/java/util/Collection.java" />
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/LoginResponseType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/SecurityProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/controller/CustomLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/AuthenticationProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.0.RELEASE/spring-security-config-5.2.0.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/SessionManagementConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="402" column="25" lean-forward="true" selection-start-line="402" selection-start-column="25" selection-end-line="402" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.0.RELEASE/spring-security-web-5.2.0.RELEASE-sources.jar!/org/springframework/security/web/session/SessionInformationExpiredStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8.0_231/jre/lib/rt.jar!/sun/misc/resources/Messages_zh_CN.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/jdk1.8.0_231/src.zip!/com/sun/org/apache/xalan/internal/xsltc/compiler/util/ErrorMessages_zh_CN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-932">
@@ -719,34 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/ReloadMessageConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/WebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/messages_zh_CN.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="19" column="86" selection-start-line="19" selection-start-column="86" selection-end-line="19" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="46" column="104" selection-start-line="46" selection-start-column="104" selection-end-line="46" selection-end-column="104" />
         </state>
       </provider>
     </entry>
@@ -764,80 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/security/CutomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomInvalidSessionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/CustomAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomSessionInformationExpiredStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfigBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomLogoutHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/script.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -847,6 +644,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/error/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/head.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/control-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3564">
+          <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-footer.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login-mobile.html">
@@ -859,47 +679,233 @@
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-footer.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/head.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/control-sidebar.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="297">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-sidebar.html">
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileValiddateFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        <state relative-caret-position="76">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/templates/fragments/main-header.html">
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="132" column="30" lean-forward="true" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="42" />
+        <state relative-caret-position="189">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/security/CutomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/controller/CustomLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/controller/MobileLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_231/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/SecurityProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/LoginResponseType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/properites/AuthenticationProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/util/SMSUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/code/KapTchaImageCodeConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/code/ImageCodeValidateFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/messages_zh_CN.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/mobile/MobileAuthenticationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomSessionInformationExpiredStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfigBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/ReloadMessageConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE.jar!/org/springframework/security/core/session/SessionRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/java/com/mengxuegu/web/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/CustomAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomInvalidSessionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/config/SpringSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="154" column="62" selection-start-line="154" selection-start-column="62" selection-end-line="154" selection-end-column="62" />
+        <state relative-caret-position="243">
+          <caret line="156" column="62" lean-forward="true" selection-start-line="156" selection-start-column="62" selection-end-line="156" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mengxuegu-security-core/src/main/java/com/mengxuegu/security/authentication/session/CustomLogoutHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="21" column="5" lean-forward="true" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

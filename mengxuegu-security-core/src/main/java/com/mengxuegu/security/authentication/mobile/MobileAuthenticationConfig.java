@@ -32,7 +32,8 @@ public class MobileAuthenticationConfig extends SecurityConfigurerAdapter<Defaul
         mobileAuthenticationFilter.setAuthenticationManager(http.getSharedObject(AuthenticationManager.class));
         //指定记住我功能
         mobileAuthenticationFilter.setRememberMeServices(http.getSharedObject(RememberMeServices.class));
-        //session重复登录管理
+
+        //session会话管理功能(解决用户密码登录后还可以手机号登录)
         mobileAuthenticationFilter.setSessionAuthenticationStrategy(http.getSharedObject(SessionAuthenticationStrategy.class));
 
         //传入成功处理器
